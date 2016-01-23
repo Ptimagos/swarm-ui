@@ -1,6 +1,6 @@
 docker run --name swarm-ui-mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=swarm-ui -e MYSQL_USER=swarm-ui -e MYSQL_PASSWORD=swarm-ui -d mysql
 
-docker run --name swarm-ui -p 8080:8080 -v /opt/swarm-ui:/opt/swarm-ui -v /opt/swarm-ui/nginx:/etc/nginx/conf.d -d richarvey/nginx-php-fpm
+docker run --name swarm-ui --dns 192.168.99.100 --dns 192.168.99.101 --dns 192.168.99.102 --dns-search service.consul -p 8080:8080 -v /opt/swarm-ui:/opt/swarm-ui -v /opt/swarm-ui/nginx:/etc/nginx/conf.d -d richarvey/nginx-php-fpm
 
 
 curl -X PUT -d '$2y$09$euamvcNtYHuEBbZaApjbgeYE4qeHvfpkmnnqiFqYdKnUWS6kRoGeG' http://192.168.99.100:8500/v1/kv/docker/swarm-ui/users/admin/passwd
