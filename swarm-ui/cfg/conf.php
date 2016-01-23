@@ -12,7 +12,7 @@ $server['setup']['uri']="/";
 /* Setting access to MySQL Server */
 $server['mysql']['user']="swarm-ui"; 				// Login access to MYSQL
 $server['mysql']['pass']="swarm-ui"; 				// Password access to MYSQL
-$server['mysql']['host']="192.168.99.110";			// Server Host MYSQL
+$server['mysql']['host']="192.168.99.104";			// Server Host MYSQL
 $server['mysql']['db']="swarm-ui";				// BD Name
 
 /* Setting Conul server */
