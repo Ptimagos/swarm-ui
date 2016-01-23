@@ -14,43 +14,80 @@ if ( !isset($server['projectName']) ) {
 	<!-- Sidebar -->
 	<div id="sidebar-wrapper">
 		<ul id="sidebar_menu" class="sidebar-nav">
-			<li class="sidebar-brand"><a id="menu-toggle" href="#"><span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
+			<li class="sidebar-brand">
+				<a id="menu-toggle" href="#">
+					<span id="main_icon" class="glyphicon glyphicon-align-justify">
+					</span>
+				</a>
+			</li>
 		</ul>
 		<ul class="sidebar-nav" id="sidebar">     
-			<li id="wrapper-dash_0001" class="active"><a onClick='dashWrapper(1)' href="#" id="dash_elem_0001" data-toggle="tooltip" data-placement="right" title="Dashboard">Dashboard<div id="wrapper-dash"><span id="main_icon_dash" class="glyphicon glyphicon-dashboard"><span class="wrapper-badge"></span></span></div></a></li>
-			<li id="wrapper-dash_0002"><a onClick='dashWrapper(2)' href="#" id="dash_elem_0002" data-toggle="tooltip" data-placement="right" title="Agents Docker">Agents<div id="wrapper-agents"><?php include $server['cfg']['home'] . "www/alarms/dashboard-wrapper-agent-alarm.php"; ?></div></a></li>
-			<li id="wrapper-dash_0003"><a onClick='dashWrapper(3)' href="#" id="dash_elem_0003" data-toggle="tooltip" data-placement="right" title="Containers Docker">Containers<div id="wrapper-instances"><?php include $server['cfg']['home'] . "www/alarms/dashboard-wrapper-instance-alarm.php"; ?></div></a></li>
-			<li id="wrapper-dash_0004"><a onClick='dashWrapper(4)' href="#" id="dash_elem_0004" data-toggle="tooltip" data-placement="right" title="Tasks">Tasks<div id="wrapper-tasks"><?php include $server['cfg']['home'] . "www/alarms/dashboard-wrapper-tasks-alarm.php"; ?></div></a></li>
-			<li id="wrapper-dash_0005"><a onClick='dashWrapper(5)' href="#" id="dash_elem_0005" data-toggle="tooltip" data-placement="right" title="Parameters">Parameters<div id="wrapper-params"><span id="main_icon_dash" class="glyphicon glyphicon-cog"><span class="wrapper-badge"></span></span></div></a></li>
+			<li id="wrapper-dash_0001" class="active">
+				<a onClick='dashWrapper(1)' href="#" id="dash_elem_0001" data-toggle="tooltip" data-placement="right" title="Dashboard">
+					Dashboard
+					<div id="wrapper-dash">
+						<span id="main_icon_dash" class="glyphicon glyphicon-dashboard">
+						</span>
+					</div>
+				</a>
+			</li>
+			<li id="wrapper-dash_0002">
+				<a onClick='dashWrapper(2)' href="#" id="dash_elem_0002" data-toggle="tooltip" data-placement="right" title="Agents Docker">
+					Agents
+					<div id="wrapper-agents">
+						<?php include $server['cfg']['home'] . "www/alarms/dashboard-wrapper-agent-alarm.php"; ?>
+					</div>
+				</a>
+			</li>
+			<li id="wrapper-dash_0003">
+				<a onClick='dashWrapper(3)' href="#" id="dash_elem_0003" data-toggle="tooltip" data-placement="right" title="Containers Docker">
+					Containers
+					<div id="wrapper-instances">
+						<?php include $server['cfg']['home'] . "www/alarms/dashboard-wrapper-instance-alarm.php"; ?>
+					</div>
+				</a>
+			</li>
+			<li id="wrapper-dash_0004">
+				<a onClick='dashWrapper(4)' href="#" id="dash_elem_0004" data-toggle="tooltip" data-placement="right" title="Tasks">
+					Tasks
+					<div id="wrapper-tasks">
+						<?php include $server['cfg']['home'] . "www/alarms/dashboard-wrapper-tasks-alarm.php"; ?>
+					</div>
+				</a>
+			</li>
+			<li id="wrapper-dash_0005">
+				<a onClick='dashWrapper(5)' href="#" id="dash_elem_0005" data-toggle="tooltip" data-placement="right" title="Parameters">
+					Parameters
+					<div id="wrapper-params">
+						<span id="main_icon_dash" class="glyphicon glyphicon-cog">
+						</span>
+					</div>
+				</a>
+			</li>
 		</ul>
 	</div>
-          
-      <!-- Page content -->
-      <div id="page-content-wrapper">
-        <!-- Keep all page content within the page-content inset div! -->
-		
-	 <!-- Middle Container -->
-    <div class="col-xs-12 collapse.in" id="body-middle-container_0001">
-		<?PHP include "dashboard-middle1.php"; ?>
-	</div>
-    <div class="col-xs-12 collapse" id="body-middle-container_0002">
-		<?PHP include "dashboard-middle2.php"; ?>
-    </div>
-    <div class="col-xs-12 collapse" id="body-middle-container_0003">
-		<?PHP include "dashboard-middle3.php"; ?>
-    </div>
-	<div class="col-xs-12 collapse" id="body-middle-container_0004">
-		<?PHP include "dashboard-middle4.php"; ?>
-    </div>
- 	<div class="col-xs-12 collapse" id="body-middle-container_0005">
-		<?PHP include "dashboard-middle5.php"; ?>
-    </div>
-
-
-        <!-- End Middle Container -->
-      </div>
-      
-    </div>
+	<!-- Page content -->
+	<div id="page-content-wrapper">
+		<!-- Keep all page content within the page-content inset div! -->
+		<!-- Middle Container -->
+		<div class="col-xs-12 collapse.in" id="body-middle-container_0001">
+			<?PHP include "dashboard-middle1.php"; ?>
+		</div>
+		<div class="col-xs-12 collapse" id="body-middle-container_0002">
+			<?PHP include "dashboard-middle2.php"; ?>
+		</div>
+		<div class="col-xs-12 collapse" id="body-middle-container_0003">
+			<?PHP include "dashboard-middle3.php"; ?>
+		</div>
+		<div class="col-xs-12 collapse" id="body-middle-container_0004">
+			<?PHP include "dashboard-middle4.php"; ?>
+		</div>
+		<div class="col-xs-12 collapse" id="body-middle-container_0005">
+			<?PHP include "dashboard-middle5.php"; ?>
+		</div>
+		<!-- End Middle Container -->
+	</div>	
+</div>
 
 <!-- Modal -->
 <div id="tasksAction" class="modal fade" data-backdrop="static" role="dialog">
@@ -85,7 +122,7 @@ function actionAgent(action,host_id) {
 			}, 2000);
 			setTimeout(function(){
 				$('#body-middle-container_0002').load('dashboard/dashboard-middle2.php');
-				$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
+				$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php");
 			}, 2300);
 		}	 
 	});
@@ -105,7 +142,7 @@ function actionContainer(action,host_id,container_id,instance_id) {
 			}, 2000);
 			setTimeout(function(){
 				$('#body-middle-container_0003').load('dashboard/dashboard-middle3.php');
-				$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
+				$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php");
 			}, 2300);
 		}	 
 	});
