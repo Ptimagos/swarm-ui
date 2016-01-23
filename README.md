@@ -1,2 +1,2 @@
 # swarm-ui
-Web frontend to used Docker Swarm
+Web frontend to use Docker Swarm
