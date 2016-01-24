@@ -1,5 +1,8 @@
-<?PHP include "checks/docker-daemon.php"; ?>
-<?PHP include "checks/docker-swarm-manager.php"; ?>
+<?PHP 
+include "checks/docker-daemon.php";
+include "checks/docker-swarm-manager.php";
+include "checks/docker-swarm-containers.php"
+?>
 <!-- Fixed navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
@@ -15,16 +18,25 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="#" id="home">Dashboards</a></li>
-        <li><a href="#" id="hosts">Hosts</a></li>
-		<?PHP
-		if ( $_SESSION['login_profile'] == 1 ) {
-			print "<li><a href='#' id='adm-users'>Admin</a></li>";
-		}
-		?>
-		<li><a href="tpl/login/logout.php" id="logout"><span class="glyphicon glyphicon-off" style="font-size: 14px;"></span>  (<?PHP print $_SESSION['login_user']; ?>)</a></li>		
-		
+        <li>
+          <a href="#" id="hosts">
+            Hosts
+          </a>
+        </li>
+		    <?PHP
+		    if ( $_SESSION['login_profile'] == 1 ) {
+          print "<li><a href='#' id='adm-users'>Admin</a></li>";
+		    }
+		    ?>
+		    <li>
+          <a href="tpl/login/logout.php" id="logout">
+            <span class="glyphicon glyphicon-off" style="font-size: 14px;"></span>
+            (<?PHP print $_SESSION['login_user']; ?>)
+          </a>
+        </li>		
       </ul>
-    </div><!--/.nav-collapse -->
+    </div>
+    <!--/.nav-collapse -->
   </div>
 </nav>
 
