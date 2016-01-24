@@ -30,7 +30,7 @@ function getUserPassword($username,$server){
   $uri = $server['consul']['store_keys']."/users/".$username."/passwd";
   $userPasswd = restRequest("GET",$url,$uri);
 
-  // Return resultat                
+  // Return result               
   return $userPasswd;
 }
 
@@ -38,10 +38,32 @@ function getUserPassword($username,$server){
 function getUserInfo($username,$key,$server){
   $url = $server['consul']['url'];
   $uri = $server['consul']['store_keys']."/users/".$username."/".$key;
-  $userPasswd = restRequest("GET",$url,$uri);
+  $userInfo = restRequest("GET",$url,$uri);
 
-  // Return resultat
-  return $userPasswd;
+  // Return result
+  return $userInfo;
+}
+
+/**** Function getNumberUpOrDown CONSUL ****/
+function getNumberUpOrDown($nodes,$stat){
+  $nb_nodes = count($nodes);
+  $nb_nodes_running=0;
+  $nb_nodes_down=0;
+  for($x = 0; $x < $nb_nodes; $x++){
+    $nodeValue = base64_decode($nodes[$x]['Value']);
+    $value = json_decode($nodeValue);
+    if (isset($value->status) && $value->status == $stat ){
+      $nb_nodes_running++;
+    } else {
+      $nb_nodes_down++;
+    }  
+  }
+  $numberUpOrDown['total'] = $nb_nodes;
+  $numberUpOrDown['running'] = $nb_nodes_running;
+  $numberUpOrDown['down'] = $nb_nodes_down;
+
+  // Return result
+  return $numberUpOrDown;
 }
 
 /**** Function setNode CONSUL ****/
@@ -56,6 +78,13 @@ function setSwarm($nodeName,$swarmSet,$server){
   $url = $server['consul']['url'];                                    
   $uri = $server['consul']['store_keys']."/swarm-manager/".$nodeName;         
   restRequest("PUT",$url,$uri,"",$swarmSet);                           
+} 
+
+/**** Function setContainer CONSUL ****/                                    
+function setContainer($containerID,$containerSet,$server){                         
+  $url = $server['consul']['url'];                                    
+  $uri = $server['consul']['store_keys']."/containers/".$containerID;         
+  restRequest("PUT",$url,$uri,"",$containerSet);                           
 } 
 
 /**** Fonction de curl ****/                  
