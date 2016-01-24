@@ -1,5 +1,6 @@
 <?PHP
-	include "dashboard-middle2-get.php";
+// ----- Host Docker ----- //
+$nodesDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes","?recurse");
 ?>
 
 <!-- Main component for a primary marketing message or call to action -->
@@ -7,77 +8,56 @@
 <div class="row">
 <!-- Middle Container -->
 <div class="col-xs-12" id="body-middle-container">
-<h1 class="page-header">Agents Docker</h1>
+<h1 class="page-header">Hosts Docker</h1>
 <div class="panel panel-default">
 <div class="panel-heading">
-<h3 class="panel-title">Agents's List</h3>
+<h3 class="panel-title">Hosts's List</h3>
 </div>
 <div class="panel-body">
 Place a filter input here and action button !
 <br/>
-Taille du tableau host : <?PHP print $arr_length; ?>
 </div>
 <!-- Table -->
 <table class="table table-striped">
 <tr>
 <th>#</th>
-<th>Agent name</th>
-<th>version</th>
 <th>Hostname</th>
-<th>Agent Status</th>
-<th>Actions</th>
+<th>Docker version</th>
+<th>Status</th>
 <th>Alarms</th>
 </tr>
 <?PHP
-	for($t=0;$t<$num_agent;$t++)
+  $nb_nodeDocker = count($nodesDocker);
+	for($x=0;$x<$nb_nodeDocker;$x++)
 	{
-		$x = $all_host_agents[$t]['id'];
+		$nodeDockerValue = base64_decode($nodesDocker[$x]['Value']);
+    $valueDocker = json_decode($nodeDockerValue);
 		print "<tr>";
 		print "<td>";
 		print $x;
 		print "</td>";
 		print "<td>";
-		print $agents[$all_host_agents[$x]['agent_id']]['name'];
+		print $valueDocker->name;
 		print "</td>";
 		print "<td>";
-		print $agents[$all_host_agents[$x]['agent_id']]['version'];
-		print "</td>";
-		print "<td>";
-		print $all_hosts[$all_host_agents[$x]['host_id']]['hostname'];
+		print $valueDocker->version;
 		print "</td>";
 		print "<td>";
 		$button_actif="active";
-		switch ($status_id[$all_host_agents[$x]['status_id']]) {
-			case "running":
+		switch ($valueDocker->status) {
+			case "Healthy":
 				$label="label-success";
-				$icon="glyphicon glyphicon-off";
-				$label_action="label-danger";
-				$button_action="stop";
 				$stat="running";
 				break;
-			case "stopped":
-				$label="label-warning";
-				$icon="glyphicon glyphicon-play";
-				$stat="stopped";
-				$button_action="start";
-				$label_action="label-success";
-				break;
-			case "unknown":
+			case "down":
 				$label="label-danger";
 				$stat="unknown";
-				$icon="glyphicon glyphicon-play";
-				$button_action="start";
-				$label_action="label-success";
 				break;
 		}
 		print "<span class='label ". $label ."' style='font-size: 95%;'>". $stat ."</span>";
 		print "</td>";
 		print "<td>";
-		print "<button type='button' id='button_agent_action" . $x . "' onclick=\"actionAgent('".$button_action."','".$all_host_agents[$x]['host_id']."')\" class='btn btn-sm" . $button_actif . "' style='padding: 5px;' autocomplete='off'>";
-		print "<span class='label ". $label_action ." ". $icon ."' style='font-size: 100%;top: 0px;'> </span></button>";
-		print "</td>";
-		print "<td>";
-		if ( $all_host_agents[$x]['set_alarm'] == 1 ) {
+		if (!isset($valueDocker->alarm)) {
 			$label_off = "btn btn-xs btn-default";
 			$label_on = "btn btn-xs btn-success active";
 			$setAlarm = 0;
@@ -86,8 +66,8 @@ Taille du tableau host : <?PHP print $arr_length; ?>
 			$label_off = "btn btn-xs btn-danger active";
 			$setAlarm = 1;
 		}
-		print "<div class='btn-group' data-toggle='buttons' onClick=\"setAlarmAgent('/dockerstation/tpl/alarm/setAlarm.php',"
-			. "{id:" . $x . ",alarm:" . $setAlarm . ",table:'ds_hosts_agents',hearthbeat:'" . $all_host_agents[$x]['hearthbeat']. "'})\">"
+		print "<div class='btn-group' data-toggle='buttons' onClick=\"setAlarmAgent('".$server['setup']['uri']."tpl/alarm/setAlarm.php',"
+			. "{id:" . $x . ",alarm:" . $setAlarm . ",table:'ds_hosts_agents',hearthbeat:'1234'})\">"
 			. "<label class='" . $label_on . "'>"
 			. "<input type='radio' name='alarmSet' autocomplete='off' /> On"
 			. "</label>"

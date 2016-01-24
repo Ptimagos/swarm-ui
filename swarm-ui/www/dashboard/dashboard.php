@@ -32,8 +32,8 @@ if ( !isset($server['projectName']) ) {
 				</a>
 			</li>
 			<li id="wrapper-dash_0002">
-				<a onClick='dashWrapper(2)' href="#" id="dash_elem_0002" data-toggle="tooltip" data-placement="right" title="Agents Docker">
-					Agents
+				<a onClick='dashWrapper(2)' href="#" id="dash_elem_0002" data-toggle="tooltip" data-placement="right" title="Hosts Docker">
+					Docker
 					<div id="wrapper-agents">
 						<?php include $server['cfg']['home'] . "www/alarms/dashboard-wrapper-agent-alarm.php"; ?>
 					</div>

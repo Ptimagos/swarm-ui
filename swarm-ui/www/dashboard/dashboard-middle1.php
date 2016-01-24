@@ -54,19 +54,19 @@ include "dashboard-middle1-get.php";
                   <div class="panel-heading">
                     <h3 class="panel-title">Total</h3>
                   </div>
-                  <span class="text-muted font-db font-db-default"><?PHP print $dashboard_agents['total']; ?></span>
+                  <span class="text-muted font-db font-db-default"><?PHP print $dashboard_managers['total']; ?></span>
                 </div>
                 <div class="col-xs-4 col-xs-offset-1 col-sm-2 panel panel-default" style='padding-left: 0px; padding-right: 0px;'>
                   <div class="panel-heading">
                     <h3 class="panel-title">Running</h3>
                   </div>
-                  <span class="text-muted font-db font-db-success"><?PHP print $dashboard_agents['running']; ?></span>
+                  <span class="text-muted font-db font-db-success"><?PHP print $dashboard_managers['running']; ?></span>
                 </div>
                 <div class="col-xs-4 col-xs-offset-1 col-sm-2 panel panel-default" style='padding-left: 0px; padding-right: 0px;'>
                   <div class="panel-heading">
                     <h3 class="panel-title">Stopped</h3>
                   </div>
-                  <span class="text-muted font-db font-db-warning"><?PHP print $dashboard_agents['stopped']; ?></span>
+                  <span class="text-muted font-db font-db-warning"><?PHP print $dashboard_managers['stopped']; ?></span>
                 </div>
               </div>
             </div>
@@ -82,19 +82,19 @@ include "dashboard-middle1-get.php";
               <div class="panel-heading">
                 <h3 class="panel-title">Total</h3>
               </div>
-              <span class="text-muted font-db font-db-default"><?PHP print $dashboard_instances['total']; ?></span>
+              <span class="text-muted font-db font-db-default"><?PHP print $dashboard_containers['total']; ?></span>
             </div>
             <div class="col-xs-4 col-xs-offset-1 col-sm-2 panel panel-default" style='padding-left: 0px; padding-right: 0px;'>
               <div class="panel-heading">
                 <h3 class="panel-title">Running</h3>
               </div>
-              <span class="text-muted font-db font-db-success"><?PHP print $dashboard_instances['running']; ?></span>
+              <span class="text-muted font-db font-db-success"><?PHP print $dashboard_containers['running']; ?></span>
             </div>
             <div class="col-xs-4 col-xs-offset-1 col-sm-2 panel panel-default" style='padding-left: 0px; padding-right: 0px;'>
               <div class="panel-heading">
                 <h3 class="panel-title">Stopped</h3>
               </div>
-              <span class="text-muted font-db font-db-warning"><?PHP print $dashboard_instances['stopped']; ?></span>
+              <span class="text-muted font-db font-db-warning"><?PHP print $dashboard_containers['stopped']; ?></span>
             </div>
           </div>
         </div>

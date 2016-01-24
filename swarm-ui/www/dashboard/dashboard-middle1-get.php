@@ -27,41 +27,26 @@ $current_time = time();
 
 // ----- Host Docker ----- //
 
-$nodes = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes","?recurse");                           
-$nb_nodes = count($nodes) - 1;
-$dashboard_hosts['total']=$nb_nodes;
-$nb_nodes_running=0;
-$nb_nodes_down=0;
-for($x = 0; $x < $nb_nodes; $x++){
-  $nodeValue = base64_decode($nodes[$x]['Value']);
-  $value = json_decode($nodeValue);
-  if (isset($value->status) && $value->status == "Healthy" ){
-    $nb_nodes_running++;
-  } else {
-    $nb_nodes_down++;
-  }  
-}
-$dashboard_hosts['running']=$nb_nodes_running;
-$dashboard_hosts['offline']=$nb_nodes - $nb_nodes_running;
+$nodes = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes","?recurse");
+$nodesStatus = getNumberUpOrDown($nodes,"Healthy");
+$dashboard_hosts['total'] = $nodesStatus['total'];
+$dashboard_hosts['running'] = $nodesStatus['running'];
+$dashboard_hosts['offline'] = $nodesStatus['down'];
 
 // ----- Swarm manager ----- //
 
-$nodes = restRequest("GET",$server['consul']['url'],"/v1/catalog/service/swarm-manager");
-$nb_nodes = count($nodes);
-$dashboard_agents['total']=$nb_nodes;
-$nodes_running = restRequest("GET",$server['consul']['url'],"/v1/health/service/swarm-manager","passing");                           
-$nb_nodes_running = count($nodes_running);
-$dashboard_agents['running']=$nb_nodes_running;
-$dashboard_agents['stopped']=$nb_nodes - $nb_nodes_running;
-// ----- Instance Docker ----- //
+$swarms = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/swarm-manager","?recurse");
+$swarmsStatus = getNumberUpOrDown($swarms,"Up");
+$dashboard_managers['total'] = $swarmsStatus['total'];
+$dashboard_managers['running'] = $swarmsStatus['running'];
+$dashboard_managers['stopped'] = $swarmsStatus['down'];
 
-$swarm_p = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm/leader");
-$swarmPrimary = base64_decode($swarm_p[0]['Value']);
-$instances = restRequest("GET","https://".$swarmPrimary,"/containers/json");
-$nb_instances = count($instances);
-$dashboard_instances['total']=$nb_instances;
-$dashboard_instances['running']=0;
-$dashboard_instances['stopped']=0;
+// ----- Containers Docker ----- //
+$containers = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");
+$containersStatus = getNumberUpOrDown($containers,"Up");
+$dashboard_containers['total'] = $containersStatus['total'];
+$dashboard_containers['running'] = $containersStatus['running'];
+$dashboard_containers['stopped'] = $containersStatus['down'];
 
 // Disconnect to bdd :
 decMysql($connexion);
