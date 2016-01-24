@@ -18,7 +18,8 @@
 	if ($rows == 1) {
 		if (password_verify($password, base64_decode($resu[0]['Value']))) {
 			$_SESSION['login_user']=$username;
-			$_SESSION['login_profile']= getUserInfo($username,"profile",$server);
+			$resu = getUserInfo($username,"profile",$server);
+			$_SESSION['login_profile']= base64_decode($resu[0]['Value']);
 			print "<div class='bg-success' style='text-align:center'>You are now connected</div>";
 		} else {
 			print "<div class='bg-danger' style='text-align:center'>Invalid Password, try again.</div>";
