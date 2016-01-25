@@ -61,14 +61,14 @@ Place informations here and action button ...
 				$label_action="label-danger";
 				$button_action="stop";
 				break;
-			case "exited":
+			case "Exited":
 				$label="label-danger";
 				$stat="stopped";
 				$icon="glyphicon glyphicon-play";
 				$label_action="label-success";
 				$button_action="start";
 				break;
-			case "default":                                                                                                                                                                          
+			default:                                                                                                                                                                          
 				$label="label-danger";                                                                                                                                                          
 				$stat="unknown";                                                                                                                                                                
 				$icon="glyphicon glyphicon-play";
