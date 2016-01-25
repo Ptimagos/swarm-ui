@@ -1,9 +1,6 @@
 #! /bin/bash 
 servers=$@
-machine_opt=""
-docker_opt=""
-master_server="master1 master2 master3"
-dns=""
+. ./createAppServer.conf
 
 for master_serv in $master_server
 do

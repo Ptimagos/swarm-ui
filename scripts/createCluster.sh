@@ -1,9 +1,6 @@
 #! /bin/bash 
 servers=$@
-machine_opt=""
-docker_opt=""
-master=""
-dns_consul=""
+. ./createCluster.conf
 
 echo "###########################################"
 echo "Create VM to docker :"

@@ -27,14 +27,14 @@ Place a filter input here and action button !
 <th>Alarms</th>
 </tr>
 <?PHP
-  $nb_nodeDocker = count($nodesDocker);
+	$nb_nodeDocker = count($nodesDocker);
 	for($x=0;$x<$nb_nodeDocker;$x++)
 	{
 		$nodeDockerValue = base64_decode($nodesDocker[$x]['Value']);
-    $valueDocker = json_decode($nodeDockerValue);
+    	$valueDocker = json_decode($nodeDockerValue);
 		print "<tr>";
 		print "<td>";
-		print $x;
+		print $x + 1;
 		print "</td>";
 		print "<td>";
 		print $valueDocker->name;
