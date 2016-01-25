@@ -26,7 +26,6 @@ $nodesDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-u
 <div class="panel-body">
 Place a filter input here and action button !
 <br/>
-<div id="resultSetAlarm"></div>
 </div>
 <!-- Table -->
 <table class="table table-striped">
