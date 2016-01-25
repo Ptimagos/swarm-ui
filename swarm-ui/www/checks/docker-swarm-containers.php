@@ -21,7 +21,8 @@ for($x = 0; $x < $arrlength; $x++){
   $containerImage = $containerInfos[$x]['Image'];
   $checkContainer[$containerID]['serviceName'] = $serviceName; 
   $containerSet = '{"nodeName":"'.$nodeName.'","id":"'.$containerID.'","image":"'.$containerImage.'","serviceName":"'.$serviceName.'","status":"'.$status.'","uptime":"'.$uptime.'"}';
-  setContainer($containerID,$containerSet,$server);
+  $table = $nodeName."-".$containerID;
+  setContainer($table,$containerSet,$server);
 }         
 
 // Check Status for all Swarm manager registored

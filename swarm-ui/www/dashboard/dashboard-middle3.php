@@ -30,11 +30,10 @@ Place informations here and action button ...
 <!-- Table -->
 <table class="table table-striped">
 <tr>
-<th>#</th>
+<th>Hostname</th>
 <th>Container ID</th>
 <th>Name</th>
 <th>Image</th>
-<th>Hostname</th>
 <th>Container Status</th>
 <th>Actions</th>
 <th>Alarms</th>
@@ -47,7 +46,7 @@ Place informations here and action button ...
 		$valueDocker = json_decode($containerDockerValue);
 		print "<tr>";
 		print "<td>";
-		print $x + 1;
+		print $valueDocker->nodeName;
 		print "</td>";
 		print "<td>";
 		print $valueDocker->id;
@@ -57,9 +56,6 @@ Place informations here and action button ...
 		print "</td>";
 		print "<td>";
 		print $valueDocker->image;
-		print "</td>";
-		print "<td>";
-		print $valueDocker->nodeName;
 		print "</td>";
 		print "<td>";
 		$button_actif="active";
