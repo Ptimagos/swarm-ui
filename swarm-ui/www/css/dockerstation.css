@@ -243,15 +243,15 @@
 {
    float: right;
    padding-right: 15px;
+   margin-top: -40px;
    padding-top: 10px;
    padding-bottom: 15px;
-   margin-top: -40px;
 }
 
 #main_icon_alarm
 {
    float: right;
-   margin-right: -10px;
+   margin-right: -12px;
    margin-top: -40px;
    padding-top: 10px;
    padding-bottom: 15px;
