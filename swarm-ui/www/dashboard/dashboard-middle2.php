@@ -1,4 +1,14 @@
 <?PHP
+if ( !isset($server['projectName']) ) {
+	session_start();
+	//Inclusion du fichier de configuration
+	require "../../cfg/conf.php";
+	
+	//Inclusion des differentes librairies
+	require "../../lib/fonctions.php";
+	require "../../lib/mysql.php";
+	require "../../lib/psql.php";
+}
 // ----- Host Docker ----- //
 $nodesDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes","?recurse");
 ?>
@@ -16,6 +26,7 @@ $nodesDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-u
 <div class="panel-body">
 Place a filter input here and action button !
 <br/>
+<div id="resultSetAlarm"></div>
 </div>
 <!-- Table -->
 <table class="table table-striped">
@@ -31,7 +42,7 @@ Place a filter input here and action button !
 	for($x=0;$x<$nb_nodeDocker;$x++)
 	{
 		$nodeDockerValue = base64_decode($nodesDocker[$x]['Value']);
-    	$valueDocker = json_decode($nodeDockerValue);
+		$valueDocker = json_decode($nodeDockerValue);
 		print "<tr>";
 		print "<td>";
 		print $x + 1;
@@ -57,7 +68,8 @@ Place a filter input here and action button !
 		print "<span class='label ". $label ."' style='font-size: 95%;'>". $stat ."</span>";
 		print "</td>";
 		print "<td>";
-		if (!isset($valueDocker->alarm)) {
+		$checkAlarmSet = getAlarmStatus($valueDocker->name,"nodes",$server);
+		if ( $checkAlarmSet == 0 ) {
 			$label_off = "btn btn-xs btn-default";
 			$label_on = "btn btn-xs btn-success active";
 			$setAlarm = 0;
@@ -67,7 +79,7 @@ Place a filter input here and action button !
 			$setAlarm = 1;
 		}
 		print "<div class='btn-group' data-toggle='buttons' onClick=\"setAlarmAgent('".$server['setup']['uri']."tpl/alarm/setAlarm.php',"
-			. "{id:" . $x . ",alarm:" . $setAlarm . ",table:'ds_hosts_agents',hearthbeat:'1234'})\">"
+			. "{name:'" . $valueDocker->name . "',alarm:" . $setAlarm . ",table:'nodes'})\">"
 			. "<label class='" . $label_on . "'>"
 			. "<input type='radio' name='alarmSet' autocomplete='off' /> On"
 			. "</label>"
@@ -94,7 +106,7 @@ function setAlarmAgent(path, params, method) {
 		success: function (data) {
 			//jQuery("#resultSetAlarm").html(data);
 			$('#body-middle-container_0002').load('dashboard/dashboard-middle2.php');
-			$('#wrapper-agents').load('alarms/dashboard-wrapper-agent-alarm.php');
+			$('#wrapper-agents').load('alarms/dashboard-wrapper-nodes-alarm.php');
 		}	 
 	});
 }

@@ -66,6 +66,28 @@ function getNumberUpOrDown($nodes,$stat){
   return $numberUpOrDown;
 }
 
+/**** Function getAlarmStatus CONSUL ****/
+function getAlarmStatus($name,$table,$server){
+  $url = $server['consul']['url'];
+  $uri = $server['consul']['store_keys']."/alarms/unset/".$table."/".$name;
+  $alarmSet = restRequest("GET",$url,$uri);
+  return count($alarmSet);
+}
+
+/**** Function unSetAlarm CONSUL ****/
+function unSetAlarm($name,$table,$server){
+  $url = $server['consul']['url'];
+  $uri = $server['consul']['store_keys']."/alarms/unset/".$table."/".$name;
+  restRequest("PUT",$url,$uri,"","unSetAlarm");
+}
+
+/**** Function setAlarm CONSUL ****/
+function setAlarm($name,$table,$server){
+  $url = $server['consul']['url'];
+  $uri = $server['consul']['store_keys']."/alarms/unset/".$table."/".$name;
+  restRequest("DELETE",$url,$uri);
+}
+
 /**** Function setNode CONSUL ****/
 function setNode($nodeName,$nodeSet,$server){
   $url = $server['consul']['url'];

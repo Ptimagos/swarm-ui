@@ -1,4 +1,14 @@
 <?PHP
+if ( !isset($server['projectName']) ) {
+  session_start();
+  //Inclusion du fichier de configuration
+  require "../../cfg/conf.php";
+  
+  //Inclusion des differentes librairies
+  require "../../lib/fonctions.php";
+  require "../../lib/mysql.php";
+  require "../../lib/psql.php";
+}
 // ----- Host Docker ----- //
 $containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");
 ?>
@@ -84,7 +94,8 @@ Place informations here and action button ...
 		print "<span class='label ". $label_action ." ". $icon ."' style='font-size: 100%;top: 0px;'> </span></button>";
 		print "</td>";
 		print "<td>";
-		if (!isset($valueDocker->alarm)) {
+		$checkAlarmSet = getAlarmStatus($valueDocker->id,"containers",$server);
+		if ( $checkAlarmSet == 0 ) {
 			$label_off = "btn btn-xs btn-default";
 			$label_on = "btn btn-xs btn-success active";
 			$setAlarm = 0;
@@ -94,7 +105,7 @@ Place informations here and action button ...
 			$setAlarm = 1;
 		}
 		print "<div class='btn-group' data-toggle='buttons' onClick=\"setAlarmCont('".$server['setup']['uri']."tpl/alarm/setAlarm.php',"
-			. "{id:" . $x . ",alarm:" . $setAlarm . ",table:'ds_hosts_instances',hearthbeat:'1234'})\">"
+			. "{name:'" . $valueDocker->id . "',alarm:" . $setAlarm . ",table:'containers'})\">"
 			. "<label class='" . $label_on . "'>"
 			. "<input type='radio' name='alarmSet' autocomplete='off' /> On"
 			. "</label>"
@@ -123,7 +134,7 @@ function setAlarmCont(path, params, method) {
 		success: function (data) {
 			//jQuery("#resultSetAlarm").html(data);
 			$('#body-middle-container_0003').load('dashboard/dashboard-middle3.php');
-			$('#wrapper-instances').load('alarms/dashboard-wrapper-instance-alarm.php');
+			$('#wrapper-instances').load('alarms/dashboard-wrapper-containers-alarm.php');
 		}	 
 	});
 }

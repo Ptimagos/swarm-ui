@@ -35,7 +35,7 @@ if ( !isset($server['projectName']) ) {
 				<a onClick='dashWrapper(2)' href="#" id="dash_elem_0002" data-toggle="tooltip" data-placement="right" title="Hosts Docker">
 					Docker
 					<div id="wrapper-agents">
-						<?php include $server['cfg']['home'] . "www/alarms/dashboard-wrapper-agent-alarm.php"; ?>
+						<?php include $server['cfg']['home'] . "www/alarms/dashboard-wrapper-nodes-alarm.php"; ?>
 					</div>
 				</a>
 			</li>
@@ -43,7 +43,7 @@ if ( !isset($server['projectName']) ) {
 				<a onClick='dashWrapper(3)' href="#" id="dash_elem_0003" data-toggle="tooltip" data-placement="right" title="Containers Docker">
 					Containers
 					<div id="wrapper-instances">
-						<?php include $server['cfg']['home'] . "www/alarms/dashboard-wrapper-instance-alarm.php"; ?>
+						<?php include $server['cfg']['home'] . "www/alarms/dashboard-wrapper-containers-alarm.php"; ?>
 					</div>
 				</a>
 			</li>

@@ -9,16 +9,13 @@
 	require "../../../lib/psql.php";
 	
 	// Define id and alarm
-	$id=$_POST['id'];
+	$name=$_POST['name'];
 	$table=$_POST['table'];
 	$setAlarm=$_POST['alarm'];
-	$hearthbeat=$_POST['hearthbeat'];
-	// Connexion a la base de donnees :
-	$connexion = conMysql ($server);
 	
-	// SQL query to fetch information of registerd users and finds user match.
-	$req="update ".$table." set set_alarm = '".$setAlarm."', hearthbeat = '".$hearthbeat."' where id = '".$id."';";
-	$resu = execRequete ($req, $connexion);
-	// Deconnexion de la base de donnees :
-	decMysql($connexion);
+	if ( $setAlarm == 0 ){
+  	echo unSetAlarm($name,$table,$server);
+	} else {
+		echo setAlarm($name,$table,$server);
+	}
 ?>
