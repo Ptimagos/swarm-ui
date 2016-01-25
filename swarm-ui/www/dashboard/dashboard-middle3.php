@@ -1,5 +1,6 @@
 <?PHP
-	include "dashboard-middle3-get.php";
+// ----- Host Docker ----- //
+$containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");
 ?>
 
 <!-- Main component for a primary marketing message or call to action -->
@@ -21,6 +22,7 @@ Place informations here and action button ...
 <tr>
 <th>#</th>
 <th>Container ID</th>
+<th>Name</th>
 <th>Image</th>
 <th>Hostname</th>
 <th>Container Status</th>
@@ -28,57 +30,61 @@ Place informations here and action button ...
 <th>Alarms</th>
 </tr>
 <?PHP
-	//print "Valeur de num_cont : ".$num_cont."<br/>";
-	for($t=0;$t<$num_cont;$t++)
+	$nb_containersDocker = count($containersDocker);
+	for($x=0;$x<$nb_containersDocker;$x++)
 	{
-		$x = $all_host_instances[$t]['id'];
+		$containerDockerValue = base64_decode($containersDocker[$x]['Value']);
+		$valueDocker = json_decode($containerDockerValue);
 		print "<tr>";
 		print "<td>";
-		print $x;
+		print $x + 1;
 		print "</td>";
 		print "<td>";
-		print $all_host_instances[$x]['container_id'];
+		print $valueDocker->id;
 		print "</td>";
 		print "<td>";
-		print $instances[$all_host_instances[$x]['instance_id']]['name'];
+		print $valueDocker->serviceName;
 		print "</td>";
 		print "<td>";
-		print $all_hosts[$all_host_instances[$x]['host_id']]['hostname'];
+		print $valueDocker->image;
+		print "</td>";
+		print "<td>";
+		print $valueDocker->nodeName;
 		print "</td>";
 		print "<td>";
 		$button_actif="active";
-		switch ($status_id[$all_host_instances[$x]['status_id']]) {
-			case "running":
+		switch ($valueDocker->status) {
+			case "Up":
 				$label="label-success";
+				$stat="running";
 				$icon="glyphicon glyphicon-off";
 				$label_action="label-danger";
 				$button_action="stop";
-				$stat="running";
 				break;
-			case "stopped":
-				$label="label-warning";
-				$icon="glyphicon glyphicon-play";
-				$stat="stopped";
-				$button_action="start";
-				$label_action="label-success";
-				break;
-			case "unknown":
+			case "exited":
 				$label="label-danger";
-				$stat="unknown";
+				$stat="stopped";
 				$icon="glyphicon glyphicon-play";
-				$button_action="start";
 				$label_action="label-success";
+				$button_action="start";
 				break;
+			case "default":                                                                                                                                                                          
+                                $label="label-danger";                                                                                                                                                          
+                                $stat="unknown";                                                                                                                                                                
+				$icon="glyphicon glyphicon-play";
+				$label_action="label-success";
+				$button_action="start";
+                                break;
 		}
 		print "<span class='label ". $label ."' style='font-size: 95%;'>". $stat ."</span>";
 		print "</td>";
 		print "<td>";
-		$actionCall = "'".$button_action."','".$all_host_instances[$x]['host_id']."','".$all_host_instances[$x]['container_id']."','".$all_host_instances[$x]['instance_id']."'";
+		$actionCall = "'".$button_action."','".$valueDocker->nodeName."','".$valueDocker->id."'";
 		print "<button type='button' id='button_agent_action" . $x . "' onclick=\"actionContainer(".$actionCall.")\" class='btn btn-sm" . $button_actif . "' style='padding: 5px;' autocomplete='off'>";
 		print "<span class='label ". $label_action ." ". $icon ."' style='font-size: 100%;top: 0px;'> </span></button>";
 		print "</td>";
 		print "<td>";
-		if ( $all_host_instances[$x]['set_alarm'] == 1 ) {
+		if (!isset($valueDocker->alarm)) {
 			$label_off = "btn btn-xs btn-default";
 			$label_on = "btn btn-xs btn-success active";
 			$setAlarm = 0;
@@ -87,8 +93,8 @@ Place informations here and action button ...
 			$label_off = "btn btn-xs btn-danger active";
 			$setAlarm = 1;
 		}
-		print "<div class='btn-group' data-toggle='buttons' onClick=\"setAlarmCont('/dockerstation/tpl/alarm/setAlarm.php',"
-			. "{id:" . $x . ",alarm:" . $setAlarm . ",table:'ds_hosts_instances',hearthbeat:'" . $all_host_instances[$x]['hearthbeat']. "'})\">"
+		print "<div class='btn-group' data-toggle='buttons' onClick=\"setAlarmCont('".$server['setup']['uri']."tpl/alarm/setAlarm.php',"
+			. "{id:" . $x . ",alarm:" . $setAlarm . ",table:'ds_hosts_instances',hearthbeat:'1234'})\">"
 			. "<label class='" . $label_on . "'>"
 			. "<input type='radio' name='alarmSet' autocomplete='off' /> On"
 			. "</label>"
