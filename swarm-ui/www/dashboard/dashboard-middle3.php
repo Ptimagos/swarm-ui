@@ -69,12 +69,12 @@ Place informations here and action button ...
 				$button_action="start";
 				break;
 			case "default":                                                                                                                                                                          
-                                $label="label-danger";                                                                                                                                                          
-                                $stat="unknown";                                                                                                                                                                
+				$label="label-danger";                                                                                                                                                          
+				$stat="unknown";                                                                                                                                                                
 				$icon="glyphicon glyphicon-play";
 				$label_action="label-success";
 				$button_action="start";
-                                break;
+				break;
 		}
 		print "<span class='label ". $label ."' style='font-size: 95%;'>". $stat ."</span>";
 		print "</td>";
