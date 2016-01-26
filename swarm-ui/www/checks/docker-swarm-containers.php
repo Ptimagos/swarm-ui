@@ -33,7 +33,8 @@ for($x = 0; $x < $arrlength; $x++){
   $value = json_decode($containerValue);
   if (isset($value->id) && !isset($checkContainer[$value->id])){
     $swarmSet = '{"nodeName":"'.$value->nodeName.'","id":"'.$value->id.'","image":"'.$value->image.'","serviceName":"'.$value->serviceName.'","status":"Unknown","uptime":"Unknown"}';
-    setSwarm($value->nodeName,$swarmSet,$server);
+    $table = $value->nodeName."-".$value->id;
+    setContainer($table,$swarmSet,$server);
   }
 }       
 ?>
