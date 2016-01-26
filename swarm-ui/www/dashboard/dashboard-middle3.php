@@ -68,7 +68,7 @@ Place informations here and action button ...
 				$button_action="stop";
 				break;
 			case "Exited":
-				$label="label-danger";
+				$label="label-warning";
 				$stat="stopped";
 				$icon="glyphicon glyphicon-play";
 				$label_action="label-success";
@@ -80,14 +80,19 @@ Place informations here and action button ...
 				$icon="glyphicon glyphicon-play";
 				$label_action="label-success";
 				$button_action="start";
+				$button_actif="disabled";
 				break;
 		}
 		print "<span class='label ". $label ."' style='font-size: 95%;'>". $stat ."</span>";
 		print "</td>";
 		print "<td>";
 		$actionCall = "'".$button_action."','".$valueDocker->nodeName."','".$valueDocker->id."'";
-		print "<button type='button' id='button_agent_action" . $x . "' onclick=\"actionContainer(".$actionCall.")\" class='btn btn-sm" . $button_actif . "' style='padding: 5px;' autocomplete='off'>";
-		print "<span class='label ". $label_action ." ". $icon ."' style='font-size: 100%;top: 0px;'> </span></button>";
+		if ( $button_actif == "active"){
+			print "<button type='button' id='button_agent_action".$x."' onclick=\"actionContainer(".$actionCall.")\" class='btn btn-sm btn-default' style='padding: 4px;' autocomplete='off'>";
+		} else {
+			print "<button type='button' id='button_agent_action".$x."' class='btn btn-sm btn-default disabled' style='padding: 4px;' autocomplete='off'>";
+		}
+		print "<span class='label ".$label_action." ".$icon."' style='font-size: 100%;top: 1.5px;'> </span></button>";
 		print "</td>";
 		print "<td>";
 		$checkAlarmSet = getAlarmStatus($valueDocker->id,"containers",$server);
