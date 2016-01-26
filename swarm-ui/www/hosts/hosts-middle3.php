@@ -1,7 +1,19 @@
 <?PHP
-include "hosts-middle3-get.php";
-$jsonInfoServer = file_get_contents($server['cfg']['home']."hosts/".$host_hosts['hostname'].".json", False);
-$infoServer = json_decode($jsonInfoServer, true);
+if ( !isset($server['projectName']) ) {
+	session_start();
+	//Inclusion du fichier de configuration
+	require "../../cfg/conf.php";
+	
+	//Inclusion des differentes librairies
+	require "../../lib/fonctions.php";
+	require "../../lib/mysql.php";
+	require "../../lib/psql.php";
+}
+// ----- Host Docker ----- //
+$host_id = $_GET['host_id'];
+$nodesDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes","?recurse");
+$nodeDockerValue = base64_decode($nodesDocker[$host_id]['Value']);
+$valueDocker = json_decode($nodeDockerValue);
 ?>
 
 <!-- Main component for a primary marketing message or call to action -->
@@ -15,18 +27,12 @@ $infoServer = json_decode($jsonInfoServer, true);
 				<div class="panel-heading">
 					<h3 class="panel-title">
 						<?php
-						if ( $host_hosts['status_id'] == $status_name['installing'] && $active_task == 0 ){
-							print "<span style='font-size:18px;'>".$host_hosts['hostname']."</span>";
-							$registerHost = "toReRegister";
-						} elseif ( $active_task > 0 ) {
-							print "<span style='font-size:18px;'>".$host_hosts['hostname']."</span>";
-							$registerHost = "registering";
-						} elseif ( $host_hosts['status_id'] == $status_name['offline'] ) {
-							print "<span style='font-size:18px;'>".$host_hosts['hostname']."</span>";
+						if ( $valueDocker->status == "down" ) {
+							print "<span style='font-size:18px;'>".$valueDocker->name."</span>";
 							$registerHost = "offline";
 						} else {
 							$registerHost = "done";
-							print "<span class='col-xs-11' style='padding-top: 5px; font-size:18px;'>".$host_hosts['hostname']."</span>";
+							print "<span class='col-xs-11' style='padding-top: 5px; font-size:18px;'>".$valueDocker->name."</span>";
 							include "hosts-middle3-btnAction.php";
 						}
 						?>
@@ -35,20 +41,6 @@ $infoServer = json_decode($jsonInfoServer, true);
 				<div class="panel-body">
 					<?PHP
 					switch ($registerHost) {
-						case 'toReRegister':
-							$newJob_id = time() + rand();
-							print '<form  id="addReHostForm" action="tpl/hosts/addHostTasks.php" method="post">';
-							print "<input type='hidden' name='job_id' value='".$newJob_id."'>";
-							print "<input type='hidden' name='hostname' value='".$host_hosts['hostname']."'>";
-							print "<input type='hidden' name='ipaddr' value='".$host_hosts['ip_address']."'>";
-							print "<span class='col-xs-5 col-md-3 label label-danger'><h4>Registration failed</h4>";
-							print '<button id="#addDone" type="submit" name="submit" value="Continue" class="btn btn-default">';
-							print "To register this server";
-							print "</button></span></form>";
-							break;
-						case 'registering':
-							print "<span class='col-xs-3 col-md-2 label label-default'><h5>Registration ...</h5><i class='glyphicon glyphicon-cog gly-spin'></i></span>";
-							break;
 						case 'offline':
 							print "<span class='col-xs-3 col-md-2 label label-danger'><h4>Server is offline</h4></span>";
 							break;

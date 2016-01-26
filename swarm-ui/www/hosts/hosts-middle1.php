@@ -1,6 +1,20 @@
 <?PHP
-	include "hosts-middle1-get.php";
+if ( !isset($server['projectName']) ) {
+	session_start();
+	//Inclusion du fichier de configuration
+	require "../../cfg/conf.php";
+	
+	//Inclusion des differentes librairies
+	require "../../lib/fonctions.php";
+	require "../../lib/mysql.php";
+	require "../../lib/psql.php";
+}
+// ----- Host Docker ----- //
+$nodesDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes","?recurse");
+// ----- Containers Docker ----- //
+$containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");
 ?>
+
 
 <!-- Main component for a primary marketing message or call to action -->
 <div class="container-fluid">
@@ -18,9 +32,8 @@
 			Action <span class="caret"></span>
 		</button>
 		<ul class="dropdown-menu">
-			<li><a href="#" data-toggle="modal" data-target="#addHost">Add Host</a></li>
+			<li class='disabled'><a href="#" data-toggle="modal" data-target="#addHost">Add Image</a></li>
 			<li role="separator" class="divider"></li>
-			<li class='disabled'><a href="#">Stop all Agents</a></li>
 			<li class='disabled'><a href="#">Stop all Containers</a></li>
 		</ul>
 	</div>
@@ -32,58 +45,75 @@
 <th>#</th>
 <th>Hostname</th>
 <th>Host Status</th>
-<th>Agent Status</th>
-<th>Instances Status</th>
+<th>Docker version</th>
+<th>Containers Status</th>
 </tr>
 <?PHP
 	date_default_timezone_set('CET');
-	for($t=1;$t<$num_serv;$t++)
+	$nb_nodeDocker = count($nodesDocker);
+	for($x=0;$x<$nb_nodeDocker;$x++)
 	{
-		$x = $host_hosts[$t]['id'];
+		$nodeDockerValue = base64_decode($nodesDocker[$x]['Value']);
+		$valueDocker = json_decode($nodeDockerValue);
 		print "<tr>";
 		print "<td>";
 		print $x;
 		print "</td>";
 		print "<td>";
-		print "<a onclick='loadHost(".$x.")' href='#'>".$host_hosts[$x]['hostname']."</a>";
+		print "<a onclick='loadHost(".$x.")' href='#'>".$valueDocker->name."</a>";
 		print "</td>";
-		if ( $host_hosts[$x]['status_id'] == $status_name['installing'] ) {
-			print "<td>";
-			print "</td>";
-			print "<td>";
-			print "</td>";
-			print "<td>";
-			print "</td>";
-			continue;
+		print "<td>";
+		switch ($valueDocker->status) {
+			case "Healthy":
+				$label="success";
+				$stat="running";
+				break;
+			case "down":
+				$label="danger";
+				$stat="unkonwn";
+				break;
 		}
-		print "<td>";
-		$label = status_color($status_id[$host_hosts[$x]['status_id']]);
-		print "<span class='label label-".$label."' style='font-size: 95%;'>". $status_id[$host_hosts[$x]['status_id']] ."</span>";
+		print "<span class='label label-".$label."' style='font-size: 95%;'>".$stat."</span>";
 		print "</td>";
 		print "<td>";
-		if ( $status_id[$host_hosts[$x]['status_id']] == "offline" )
+		print $valueDocker->version;
+		print "</td>";
+		print "<td>";
+		$allContainers=0;
+		$allContainersRunning=0;
+		$allContainersStopped=0;
+		$allContainersUnknown=0;
+		$nb_containerDocker = count($containersDocker);
+		for($t=0;$t<$nb_containerDocker;$t++)
 		{
-			print "<span class='label label-danger' style='font-size: 95%;'>".$status_id[$host_hosts[$x]['status_id']]."</span>";
-		} else {
-			if (isset($status_id[$host_hosts[$x]['agent'][$status_name['running']]])) {	
-				print "<span class='label label-success' style='font-size: 95%;'>". $status_id[$host_hosts[$x]['agent'][$status_name['running']]] ."</span>";
-			}
-			if (isset($status_id[$host_hosts[$x]['agent'][$status_name['stopped']]])){
-			print "<span class='label label-warning' style='font-size: 95%;'>". $status_id[$host_hosts[$x]['agent'][$status_name['stopped']]] ."</span>";
-			}
-			if (isset($host_hosts[$x]['agent']['unknown'])){
-				print "<span class='label label-danger' style='font-size: 95%;'>". $host_hosts[$x]['agent']['unknown'] ."</span>";
+			$containerDockerValue = base64_decode($containersDocker[$t]['Value']);
+			$valueContainerDocker = json_decode($containerDockerValue);
+			if ( $valueDocker->name == $valueContainerDocker->nodeName )
+			{
+				$allContainers++;
+				switch ($valueContainerDocker->status) {
+					case 'Up':
+						$allContainersRunning++;
+						break;
+					case 'Exited':
+						$allContainersStopped++;
+						break;
+					case 'Unknown':
+						$allContainersUnknown++;
+						break;
+				}
 			}
 		}
-		print "</td>";
-		print "<td>";
-		if ( $status_id[$host_hosts[$x]['status_id']] == "offline" )
+		if ( $allContainersRunning == 0 ) $allContainersRunning="";
+		if ( $allContainersStopped == 0 ) $allContainersStopped="";
+		if ( $allContainersUnknown == 0 ) $allContainersUnknown="";
+		if ( $stat == "unkonwn" )
 		{
-			print "<a href='#' style='text-decoration: none;' data-toggle='tooltip' data-placement='top' title='Instance(s) offline'><span class='label label-danger' style='font-size: 95%;'>". $status_id[$host_hosts[$x]['status_id']] ."</span></a>";
+			print "<a href='#' style='text-decoration: none;' data-toggle='tooltip' data-placement='top' title='Container(s) offline'><span class='label label-danger' style='font-size: 95%;'>".$allContainers."</span></a>";
 		} else {
-			print "<a href='#' style='text-decoration: none;' data-toggle='tooltip' data-placement='top' title='Instance(s) running'><span class='label label-success' style='font-size: 95%;'>". $host_hosts[$x]['instances'][$status_name['running']] ."</span></a>";
-			print "<a href='#' style='text-decoration: none;' data-toggle='tooltip' data-placement='top' title='Instance(s) stopped'><span class='label label-warning' style='font-size: 95%;'>". $host_hosts[$x]['instances'][$status_name['stopped']] ."</span></a>";
-			print "<a href='#' style='text-decoration: none;' data-toggle='tooltip' data-placement='top' title='Instance(s) unknown'><span class='label label-danger' style='font-size: 95%;'>". $host_hosts[$x]['instances']['unknown'] ."</span></a>";
+			print "<a href='#' style='text-decoration: none;' data-toggle='tooltip' data-placement='top' title='Container(s) running'><span class='label label-success' style='font-size: 95%;'>".$allContainersRunning."</span></a>";
+			print "<a href='#' style='text-decoration: none;' data-toggle='tooltip' data-placement='top' title='container(s) stopped'><span class='label label-warning' style='font-size: 95%;'>".$allContainersStopped."</span></a>";
+			print "<a href='#' style='text-decoration: none;' data-toggle='tooltip' data-placement='top' title='Container(s) unknown'><span class='label label-danger' style='font-size: 95%;'>".$allContainersUnknown."</span></a>";
 		}
 		print "</td>";
 		print "</tr>";
@@ -94,7 +124,7 @@
 <script type="text/javascript">
 function loadHost(item){
 	var containerRootName= '#body-host-middle-container_000';
-	var uri = '/dockerstation/hosts/hosts-middle3.php?host_id=' + item;
+	var uri = '<?PHP print $server['setup']['uri'];?>hosts/hosts-middle3.php?host_id=' + item;
 	var totalDashElem=$("ul").size()+1;
 	var currentContainer=3;
 	for (var i = 1; i < totalDashElem; i++ ) {
