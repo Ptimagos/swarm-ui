@@ -42,96 +42,96 @@ $valueDocker = json_decode($nodeDockerValue);
 					<?PHP
 					switch ($registerHost) {
 						case 'offline':
-							print "<span class='col-xs-3 col-md-2 label label-danger'><h4>Server is offline</h4></span>";
-							break;
+						print "<span class='col-xs-3 col-md-2 label label-danger'><h4>Server is offline</h4></span>";
+						break;
 						case 'done':
-							include "hosts-middle3-infoServer.php";
-							include "hosts-middle3-list.php";
-							break;
+						include "hosts-middle3-infoServer.php";
+						break;
 					}
 					?>
 				</div>
+				<?PHP include "hosts-middle3-list.php"; ?>
 
-				<?PHP include $server['cfg']['home']."www/tpl/hosts/hosts-add-container-modal.php"; ?>
+				<?PHP //include $server['cfg']['home']."www/tpl/hosts/hosts-add-container-modal.php"; ?>
 
 
 				<script type="text/javascript">
-				function backHosts(){
-					var containerRootName= '#body-host-middle-container_000';
-					var totalDashElem=$("ul").size()+1;
-					var currentContainer=1;
-					for (var i = 1; i < totalDashElem; i++ ) {
-						if(i!=currentContainer){
-							$(containerRootName+i).addClass('collapse');
-							$(containerRootName+i).removeClass('collapse.in');
+					function backHosts(){
+						var containerRootName= '#body-host-middle-container_000';
+						var totalDashElem=$("ul").size()+1;
+						var currentContainer=1;
+						for (var i = 1; i < totalDashElem; i++ ) {
+							if(i!=currentContainer){
+								$(containerRootName+i).addClass('collapse');
+								$(containerRootName+i).removeClass('collapse.in');
+							}
 						}
+						$(containerRootName+currentContainer).removeClass('collapse');
+						$(containerRootName+currentContainer).load('hosts/hosts-middle1.php');
+						$(containerRootName+currentContainer).addClass('collapse.in');
 					}
-					$(containerRootName+currentContainer).removeClass('collapse');
-					$(containerRootName+currentContainer).load('hosts/hosts-middle1.php');
-					$(containerRootName+currentContainer).addClass('collapse.in');
-				}
-				function actionContainer(action,host_id,container_id,instance_id) {
-					$('#tasksAction').modal('show');
-					url = "tpl/hosts/actionContainer.php";
-					method = "post";
-					$.ajax({
-						type: method,
-						url: url,
-						data: {actionCont: action,hostId: host_id,containerId: container_id,instanceId: instance_id},
-						success: function (data) {
-							jQuery("#actionCont").html(data);
-							setTimeout(function(){
-								$('#tasksAction').modal('hide');
-							}, 2000);
-							setTimeout(function(){
-								$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
-							}, 2300);
-						}	 
-					});
-				}
-				function actionAgent(action,host_id) {
-					$('#tasksAction').modal('show');
-					url = "tpl/hosts/actionAgent.php";
-					method = "post";
-					$.ajax({
-						type: method,
-						url: url,
-						data: {actionCont: action,hostId: host_id},
-						success: function (data) {
-							jQuery("#actionCont").html(data);
-							setTimeout(function(){
-								$('#tasksAction').modal('hide');
-							}, 2000);
-							setTimeout(function(){
-								$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
-							}, 2300);
-						}	 
-					});
-				}
+					function actionContainer(action,host_id,container_id,instance_id) {
+						$('#tasksAction').modal('show');
+						url = "tpl/hosts/actionContainer.php";
+						method = "post";
+						$.ajax({
+							type: method,
+							url: url,
+							data: {actionCont: action,hostId: host_id,containerId: container_id,instanceId: instance_id},
+							success: function (data) {
+								jQuery("#actionCont").html(data);
+								setTimeout(function(){
+									$('#tasksAction').modal('hide');
+								}, 2000);
+								setTimeout(function(){
+									$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
+								}, 2300);
+							}	 
+						});
+					}
+					function actionAgent(action,host_id) {
+						$('#tasksAction').modal('show');
+						url = "tpl/hosts/actionAgent.php";
+						method = "post";
+						$.ajax({
+							type: method,
+							url: url,
+							data: {actionCont: action,hostId: host_id},
+							success: function (data) {
+								jQuery("#actionCont").html(data);
+								setTimeout(function(){
+									$('#tasksAction').modal('hide');
+								}, 2000);
+								setTimeout(function(){
+									$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
+								}, 2300);
+							}	 
+						});
+					}
 				</script>
 				<script type="text/javascript">
-				var frm2 = $('#addReHostForm');
-				frm2.submit(function (ev) { 
-					$.ajax({
-						type: frm2.attr('method'),
-						url: frm2.attr('action'),
-						data: frm2.serialize(),
-						success: function (data) {
-							jQuery("#actionCont").html(data);
-							$("#tasksAction").modal('show');
-							setTimeout(function(){
-								$("#tasksAction").modal('hide');
-							}, 2000);
-							setTimeout(function(){
-								$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
-							}, 2300);
-						}
+					var frm2 = $('#addReHostForm');
+					frm2.submit(function (ev) { 
+						$.ajax({
+							type: frm2.attr('method'),
+							url: frm2.attr('action'),
+							data: frm2.serialize(),
+							success: function (data) {
+								jQuery("#actionCont").html(data);
+								$("#tasksAction").modal('show');
+								setTimeout(function(){
+									$("#tasksAction").modal('hide');
+								}, 2000);
+								setTimeout(function(){
+									$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
+								}, 2300);
+							}
+						});
+						ev.preventDefault();
 					});
-					ev.preventDefault();
-				});
 				</script>
-
+				<!-- Middle Container -->	
 			</div>
-			<!-- Middle Container -->	
 		</div>
 	</div>
+</div>

@@ -1,7 +1,15 @@
+<?php
+	// ----- Information Docker ----- //
+	$infoDocker = restRequestSSL("GET",$valueDocker->url,"/version");
+	print "<pre>Valeur de infoDocker : ".$infoDocker."</pre>";
+?>
 <div class='col-xs-8 well'>
 	<h5><b>System :</b></h5>
-	<b>Distribution : </b>
-	<?php print $infoServer['ansible_facts']['ansible_distribution']." ". $infoServer['ansible_facts']['ansible_distribution_version']; ?>
+	<b>Os : </b>
+	<?php print $infoDocker['Os']." ".$infoDocker['Arch']; ?>
+	<br/>
+	<b>Kernel : </b>
+	<?php print $infoDocker['KernelVersion']; ?>
 	<br/>
 	<br/>
 	<span class="col-xs-2"><b>Memory</b></span>
@@ -11,8 +19,8 @@
 	<span class="col-xs-2"><b>Total</b></span>
 	<br/> 
 	<?php
-	$memoryFree = $infoServer['ansible_facts']['ansible_memfree_mb'];
-	$memoryTotal = $infoServer['ansible_facts']['ansible_memtotal_mb'];
+	$memoryFree = 512;
+	$memoryTotal = 1024;
 	$memoryUsed = $memoryTotal - $memoryFree ; 
 	$memoryUsing = $memoryUsed / $memoryTotal * 100;
 	?>
@@ -30,17 +38,16 @@
 	<br/>
 	<br/>
 	<h5><b>Network :</b></h5>
-	<b>Server Ip Address : </b><?php print $infoServer['ansible_facts']['ansible_default_ipv4']['address']; ?>
+	<b>Server Ip Address : </b><?php //print $infoServer['ansible_facts']['ansible_default_ipv4']['address']; ?>
 	<br/>
-	<b>Docker Ip Address : </b><?php print $infoServer['ansible_facts']['ansible_docker0']['ipv4']['address']; ?>
-	&nbsp;(<?php print $infoServer['ansible_facts']['ansible_docker0']['type']; ?>)
+	<b>Docker Ip Address : </b><?php //print $infoServer['ansible_facts']['ansible_docker0']['ipv4']['address']; ?>
+	&nbsp;(<?php //print $infoServer['ansible_facts']['ansible_docker0']['type']; ?>)
 	<br/>
 </div>
 <div class='col-xs-1'>
 	<br/>
 </div>
 <div class='col-xs-3 well'>
-	<b>Agent DockerStation</b> version : <br/><br/>
-	<center><span class='label label-<?PHP print $agent_status; ?>' style='font-size: 16px;'><?PHP print $agent_version[$agent_id]['version']; ?></span></center>
-</div>
+	<b>Docker Daemon</b> version : <br/><br/>
+	<center><span class='label label-success' style='font-size: 16px;'><?PHP print $infoDocker['Version']; ?></span></center>
 </div>

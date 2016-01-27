@@ -4,56 +4,63 @@
 <tr>
 <th class='col-xs-1'>Container ID</th>
 <th class='col-xs-2'>Container Image</th>
-<th class='col-xs-2'>Options</th>
-<th class='col-xs-4'>Description</th>
+<th class='col-xs-4'>Name</th>
 <th class='col-xs-2'>Action</th>
 <th class='col-xs-2'>Status</th>
 </tr>
 <?php
-	for($t=0;$t<$num_cont;$t++){
-		$test_cont = $host_hosts[$t]['container_id'];
-		if ($test_cont != '0'){
-			switch ($status_id[$host_hosts[$t]['status_id']]) {
-			case "running":
+	// ----- Containers Docker ----- //
+	$containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");
+	$nb_containerDocker = count($containersDocker);
+	for($t=0;$t<$nb_containerDocker;$t++)
+	{
+		$containerDockerValue = base64_decode($containersDocker[$t]['Value']);
+		$valueContainerDocker = json_decode($containerDockerValue);
+		if ( $valueDocker->name == $valueContainerDocker->nodeName )
+		{
+			$button_actif="active";
+			switch ($valueContainerDocker->status) {
+			case "Up":
 				$label="label-success";
+				$stat="running";
 				$icon="glyphicon glyphicon-off";
 				$label_action="label-danger";
 				$button_action="stop";
-				$stat="running";
 				break;
-			case "stopped":
+			case "Exited":
 				$label="label-warning";
-				$icon="glyphicon glyphicon-play";
 				$stat="stopped";
-				$button_action="start";
-				$label_action="label-success";
-				break;
-			case "unknown":
-				$label="label-danger";
-				$stat="unknown";
 				$icon="glyphicon glyphicon-play";
-				$button_action="start";
 				$label_action="label-success";
+				$button_action="start";
+				break;
+			default:                                                                                                                                                                          
+				$label="label-danger";                                                                                                                                                          
+				$stat="unknown";                                                                                                                                                                
+				$icon="glyphicon glyphicon-play";
+				$label_action="label-success";
+				$button_action="start";
+				$button_actif="disabled";
 				break;
 			}
 			print "<tr>";
 			print "<td>";
-			print "<a onclick='loadCont(".$x.")' href='#'>".$host_hosts[$t]['container_id']."</a>";
+			print "<a onclick='loadCont(".$t.")' href='#'>".$valueContainerDocker->id."</a>";
 			print "</td>";
 			print "<td>";
-			print $instance_list[$host_hosts[$t]['instance_id']]['name'];
+			print $valueContainerDocker->image;
 			print "</td>";
 			print "<td>";
-			print $host_hosts[$t]['options'];
+			print $valueContainerDocker->serviceName;
 			print "</td>";
 			print "<td>";
-			print $instance_list[$host_hosts[$t]['instance_id']]['description'];
-			print "</td>";
-			print "<td>";
-			$actionCall = "'".$button_action."','".$host_id."','".$host_hosts[$t]['container_id']."','".$host_hosts[$t]['instance_id']."'";
-			print "<button type='button' id='button_agent_action" . $x . "' data-loading-text='Loading...' onclick=\"actionContainer(".$actionCall.")\" class='btn btn-sm" . $button_actif . "' style='padding: 5px;' autocomplete='off'>";
-			print "<span class='label ". $label_action ." ". $icon ."' style='font-size: 100%;top: 0px;'> </span></button>";
-			print "</td>";
+			$actionCall = "'".$button_action."','".$valueContainerDocker->nodeName."','".$valueContainerDocker->id."'";
+			if ( $button_actif == "active"){
+				print "<button type='button' id='button_agent_action".$x."' onclick=\"actionContainer(".$actionCall.")\" class='btn btn-sm btn-default' style='padding: 4px;' autocomplete='off'>";
+			} else {
+				print "<button type='button' id='button_agent_action".$x."' class='btn btn-sm btn-default disabled' style='padding: 4px;' autocomplete='off'>";
+			}
+			print "<span class='label ".$label_action." ".$icon."' style='font-size: 100%;top: 1.5px;'> </span></button>";
 			print "<td>";
 			print "<span class='label ". $label ."' style='font-size: 95%;'>". $stat ."</span>";
 			print "</td>";
