@@ -6,7 +6,7 @@
 // Get Information about SWARM Cluster
 $swarm_p = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm/leader");
 $swarmPrimary = base64_decode($swarm_p[0]['Value']);
-$swarmInfos = restRequest("GET","https://".$swarmPrimary,"/containers/json","?all=1");
+$swarmInfos = restRequestSSL("GET","https://".$swarmPrimary,"/containers/json","?all=1");
 
 // Set Swarm manager Information and status
 $checkSwarm = array();

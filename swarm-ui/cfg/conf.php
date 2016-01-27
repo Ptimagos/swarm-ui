@@ -12,13 +12,17 @@ $server['setup']['uri']="/";
 /* Setting access to MySQL Server */
 $server['mysql']['user']="swarm-ui"; 				// Login access to MYSQL
 $server['mysql']['pass']="swarm-ui"; 				// Password access to MYSQL
-$server['mysql']['host']="192.168.99.104";			// Server Host MYSQL
+$server['mysql']['host']="192.168.99.205";			// Server Host MYSQL
 $server['mysql']['db']="swarm-ui";				// BD Name
 
+/* Settting TLS Docker */
+$server['tls']['cert']=$server['cfg']['home']."certs/cert.pem";
+$server['tls']['key']=$server['cfg']['home']."certs/key.pem";
+$server['tls']['cacert']=$server['cfg']['home']."certs/ca.pem";
+
 /* Setting Conul server */
-$server['consul']['url']="http://consul:8500";			// Server CONSUL URL
+$server['consul']['url']="http://192.168.99.200:8500";			// Server CONSUL URL
 $server['consul']['store_keys']="/v1/kv/docker/swarm-ui";	// Directory Key Store in CONSUL
-$server['swarm']['url']="https://swarm-manager:3376";		// Server Swarm URL
 
 /* Configuration ansible */
 $server['ansible']['script-tasks']=$server['cfg']['home']."task-scripts/";

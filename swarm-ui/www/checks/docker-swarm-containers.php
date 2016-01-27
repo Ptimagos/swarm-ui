@@ -8,7 +8,7 @@ $swarm_p = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm/leade
 $swarmPrimary = base64_decode($swarm_p[0]['Value']);
 
 // Get All containers in the cluster
-$containerInfos = restRequest("GET","https://".$swarmPrimary,"/containers/json","?all=1");
+$containerInfos = restRequestSSL("GET","https://".$swarmPrimary,"/containers/json","?all=1");
 
 // Set Containers Information and status
 $checkContainers = array();

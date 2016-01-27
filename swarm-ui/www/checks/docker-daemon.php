@@ -6,7 +6,7 @@
 // Get Information about SWARM Cluster
 $swarm_p = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm/leader");
 $swarmPrimary = base64_decode($swarm_p[0]['Value']);
-$swarmInfos = restRequest("GET","https://".$swarmPrimary,"/info");
+$swarmInfos = restRequestSSL("GET","https://".$swarmPrimary,"/info");
 
 // Set Nodes Information and status
 $checkNodes = array();
@@ -18,7 +18,7 @@ for($x = 4, $j = 5, $t = 9; $x < $arrlength; $x += 6, $j += 6, $t += 6){
   $nodeVersion = explode(" ",$swarmInfos['DriverStatus'][$t][1]);
   $checkNodes[$nodeName]['url'] = $nodeServiceUrl; 
   $checkNodes[$nodeName]['health'] = $nodeHealth; 
-  $nodeSet = '{"name":"'.$nodeName.'","version":"'.$nodeVersion[3].'","url":"'.$nodeServiceUrl.'","status":"'.$nodeHealth.'"}';
+  $nodeSet = '{"name":"'.$nodeName.'","version":"'.$nodeVersion[3].'","url":"https://'.$nodeServiceUrl.'","status":"'.$nodeHealth.'"}';
   setNode($nodeName,$nodeSet,$server);
 }
 

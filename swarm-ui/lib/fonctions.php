@@ -139,6 +139,39 @@ function restRequest($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) {
                                     
 } // Fin de la fonction curlRequest
 
+/**** Fonction de curl TLS ****/                  
+function restRequestSSL($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) { 
+                                          
+  // Initialize options for REST interface
+  $curl_option_defaults = array(    
+    CURLOPT_HEADER => false,       
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_TIMEOUT => 2                              
+  );                                                  
+                                                      
+  // Connect                                          
+  if(!isset($curl_handle)) $curl_handle = curl_init();
+                                    
+  // Compose querry                 
+  $options = array(                                            
+    CURLOPT_URL => $url.$uri."".$querry,                                      
+    CURLOPT_CUSTOMREQUEST => $method, // GET POST PUT PATCH DELETE HEAD OPTIONS
+    CURLOPT_SSL_VERIFYPEER => true, // Verify SSL
+    CURLOPT_CERTINFO => true,
+    CURLOPT_CAINFO => "/opt/swarm-ui/certs/ca.pem",
+    CURLOPT_SSLCERT => "/opt/swarm-ui/certs/cert.pem",
+    CURLOPT_SSLKEY => "/opt/swarm-ui/certs/key.pem",
+    CURLOPT_POSTFIELDS => $json,
+  );
+  curl_setopt_array($curl_handle,($options + $curl_option_defaults));
+
+  // send request and wait for responce 
+  $responce =  json_decode(curl_exec($curl_handle),true);
+
+  // Return resultat                
+  return $responce;
+                                    
+} // Fin de la fonction curlRequestSSL
 
 /***** Fonction colors status ******/
 function status_color ($status)
