@@ -95,12 +95,19 @@ function setNode($nodeName,$nodeSet,$server){
   restRequest("PUT",$url,$uri,"",$nodeSet);
 }
 
-/**** Function setSwarm CONSUL ****/                                    
-function setSwarm($nodeName,$swarmSet,$server){                         
+/**** Function setSwarmManager CONSUL ****/                                    
+function setSwarmManager($nodeName,$swarmSet,$server){                         
   $url = $server['consul']['url'];                                    
   $uri = $server['consul']['store_keys']."/swarm-manager/".$nodeName;         
   restRequest("PUT",$url,$uri,"",$swarmSet);                           
-} 
+}
+
+/**** Function setSwarmAgent CONSUL ****/                                    
+function setSwarmAgent($nodeName,$swarmSet,$server){                         
+  $url = $server['consul']['url'];                                    
+  $uri = $server['consul']['store_keys']."/swarm-agent/".$nodeName;         
+  restRequest("PUT",$url,$uri,"",$swarmSet);                           
+}  
 
 /**** Function setContainer CONSUL ****/                                    
 function setContainer($containerID,$containerSet,$server){                         

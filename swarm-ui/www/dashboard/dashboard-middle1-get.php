@@ -10,19 +10,6 @@ if ( !isset($server['projectName']) ) {
 	require "../../lib/psql.php";
 }
 
-// Connection to bdd :
-$connexion = conMysql ($server);
-
-// request bdd - select all status 
-$req="select * from ds_status;";
-$resu = execRequete ($req, $connexion);
-
-// Create array status
-while ($res = ligneSuivante($resu)) {
-	$status_id[$res->id]=$res->status;
-	$status_name[$res->status]=$res->id;
-}
-
 $current_time = time();
 
 // ----- Host Docker ----- //
@@ -35,11 +22,19 @@ $dashboard_hosts['offline'] = $nodesStatus['down'];
 
 // ----- Swarm manager ----- //
 
-$swarms = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/swarm-manager","?recurse");
-$swarmsStatus = getNumberUpOrDown($swarms,"Up");
-$dashboard_managers['total'] = $swarmsStatus['total'];
-$dashboard_managers['running'] = $swarmsStatus['running'];
-$dashboard_managers['stopped'] = $swarmsStatus['down'];
+$swarmsManger = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/swarm-manager","?recurse");
+$swarmsManagerStatus = getNumberUpOrDown($swarmsManger,"Up");
+$dashboard_managers['total'] = $swarmsManagerStatus['total'];
+$dashboard_managers['running'] = $swarmsManagerStatus['running'];
+$dashboard_managers['stopped'] = $swarmsManagerStatus['down'];
+
+// ----- Swarm Agent ----- //
+
+$swarmsAgent = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/swarm-agent","?recurse");
+$swarmsAgentStatus = getNumberUpOrDown($swarmsAgent,"Up");
+$dashboard_agents['total'] = $swarmsAgentStatus['total'];
+$dashboard_agents['running'] = $swarmsAgentStatus['running'];
+$dashboard_agents['stopped'] = $swarmsAgentStatus['down'];
 
 // ----- Containers Docker ----- //
 $containers = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");
@@ -48,6 +43,4 @@ $dashboard_containers['total'] = $containersStatus['total'];
 $dashboard_containers['running'] = $containersStatus['running'];
 $dashboard_containers['stopped'] = $containersStatus['down'];
 
-// Disconnect to bdd :
-decMysql($connexion);
 ?>

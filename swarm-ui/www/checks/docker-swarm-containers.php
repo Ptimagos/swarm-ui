@@ -19,7 +19,7 @@ for($x = 0; $x < $arrlength; $x++){
   list($status, $uptime) = explode(" ", $containerInfos[$x]['Status'], 2);
   $containerID = substr($containerInfos[$x]['Id'], 0, 12);
   $containerImage = $containerInfos[$x]['Image'];
-  $checkContainer[$containerID]['serviceName'] = $serviceName; 
+  $checkContainer[$containerID] = $containerID; 
   $containerSet = '{"nodeName":"'.$nodeName.'","id":"'.$containerID.'","image":"'.$containerImage.'","serviceName":"'.$serviceName.'","status":"'.$status.'","uptime":"'.$uptime.'"}';
   $table = $nodeName."-".$containerID;
   setContainer($table,$containerSet,$server);
@@ -32,7 +32,15 @@ for($x = 0; $x < $arrlength; $x++){
   $containerValue = base64_decode($listContainers[$x]['Value']);
   $value = json_decode($containerValue);
   if (isset($value->id) && !isset($checkContainer[$value->id])){
-    $swarmSet = '{"nodeName":"'.$value->nodeName.'","id":"'.$value->id.'","image":"'.$value->image.'","serviceName":"'.$value->serviceName.'","status":"Unknown","uptime":"Unknown"}';
+    $checkNodeStatus = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes/".$value->nodeName);
+    $checkNodeStatusValue = base64_decode($checkNodeStatus[0]['Value']);
+    $valueCheckNodeStatus = json_decode($checkNodeStatusValue);
+    if ( $valueCheckNodeStatus->status == "Healthy"){
+      $status="Exited";
+    } else {
+      $status="Unknown";
+    }
+    $swarmSet = '{"nodeName":"'.$value->nodeName.'","id":"'.$value->id.'","image":"'.$value->image.'","serviceName":"'.$value->serviceName.'","status":"'.$status.'","uptime":"Unknown"}';
     $table = $value->nodeName."-".$value->id;
     setContainer($table,$swarmSet,$server);
   }

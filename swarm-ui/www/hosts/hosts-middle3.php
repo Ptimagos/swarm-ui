@@ -42,15 +42,16 @@ $valueDocker = json_decode($nodeDockerValue);
 					<?PHP
 					switch ($registerHost) {
 						case 'offline':
-						print "<span class='col-xs-3 col-md-2 label label-danger'><h4>Server is offline</h4></span>";
+							print "<span class='col-xs-3 col-md-2 label label-danger'><h4>Server is offline</h4></span>";
 						break;
 						case 'done':
-						include "hosts-middle3-infoServer.php";
+							include "hosts-middle3-infoServer.php";
 						break;
 					}
 					?>
 				</div>
 				<?PHP include "hosts-middle3-list.php"; ?>
+				
 
 				<?PHP //include $server['cfg']['home']."www/tpl/hosts/hosts-add-container-modal.php"; ?>
 

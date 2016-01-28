@@ -16,8 +16,7 @@ for($x = 4, $j = 5, $t = 9; $x < $arrlength; $x += 6, $j += 6, $t += 6){
   $nodeServiceUrl = $swarmInfos['DriverStatus'][$x][1];
   $nodeHealth = $swarmInfos['DriverStatus'][$j][1];
   $nodeVersion = explode(" ",$swarmInfos['DriverStatus'][$t][1]);
-  $checkNodes[$nodeName]['url'] = $nodeServiceUrl; 
-  $checkNodes[$nodeName]['health'] = $nodeHealth; 
+  $checkNodes[$nodeName] = $nodeName; 
   $nodeSet = '{"name":"'.$nodeName.'","version":"'.$nodeVersion[3].'","url":"https://'.$nodeServiceUrl.'","status":"'.$nodeHealth.'"}';
   setNode($nodeName,$nodeSet,$server);
 }
@@ -29,8 +28,11 @@ for($x = 0; $x < $arrlength; $x++){
   $nodeValue = base64_decode($listNodes[$x]['Value']);
   $value = json_decode($nodeValue);
   if (isset($value->name) && !isset($checkNodes[$value->name])){
-    $nodeSet = '{"name":"'.$value->name.'","version":"'.$value->version.'","url":"'.$value->url.'","status":"down"}';
-    setNode($value->name,$nodeSet,$server);
+    $checkDirectAccess = restRequestSSL("GET",$value->url,"/version");
+    if (!isset($checkDirectAccess['Version'])) {
+      $nodeSet = '{"name":"'.$value->name.'","version":"'.$value->version.'","url":"'.$value->url.'","status":"down"}';
+      setNode($value->name,$nodeSet,$server);
+    }
   }
 }              
 

@@ -120,8 +120,12 @@
 }
 
 .row{
-    margin-left:0px;
-    margin-right:0px;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0px;
 }
 
 #wrapper {
@@ -157,7 +161,7 @@
     height: auto;
 }
 #wrapper.active {
-    padding-left: 80px;
+    padding-left: 105px;
 }
 #wrapper.active #sidebar-wrapper {
     left: 160px;
@@ -165,6 +169,8 @@
 
 #page-content-wrapper {
   width: 100%;
+  margin-left: 45px;
+  padding-right: 45px;
 }
 
 #sidebar_menu li a, .sidebar-nav li a {

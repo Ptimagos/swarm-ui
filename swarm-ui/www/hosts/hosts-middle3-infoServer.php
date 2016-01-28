@@ -1,7 +1,6 @@
 <?php
 	// ----- Information Docker ----- //
 	$infoDocker = restRequestSSL("GET",$valueDocker->url,"/version");
-	print "<pre>Valeur de infoDocker : ".$infoDocker."</pre>";
 ?>
 <div class='col-xs-8 well'>
 	<h5><b>System :</b></h5>
