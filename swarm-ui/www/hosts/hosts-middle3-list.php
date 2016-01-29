@@ -93,7 +93,7 @@
 			{
 				print "<tr>";
 				print "<td>";
-				print "<a onclick='loadCont(".$t.")' href='#'>".$imageDocker[$t]['Id']."</a>";
+				print "<a onclick='loadCont(".$t.")' href='#'>".substr($imageDocker[$t]['Id'], 0, 12)."</a>";
 				print "</td>";
 				print "<td>";
 				print $imageDocker[$t]['RepoTags'][0];

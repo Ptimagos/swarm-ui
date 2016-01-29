@@ -1,13 +1,17 @@
 <?PHP
-if ( !isset($server['projectName']) ) {
-  session_start();
-  //Inclusion du fichier de configuration
-  require "../../cfg/conf.php";
-  
-  //Inclusion des differentes librairies
-  require "../../lib/fonctions.php";
-  require "../../lib/mysql.php";
-  require "../../lib/psql.php";
+	if ( !isset($server['projectName']) ) {
+	session_start();
+	if ( !isset($_SESSION['login_user']) ) {
+		header('Location: /');
+		exit();
+	}
+	//Inclusion du fichier de configuration
+	require "../../cfg/conf.php";
+	
+	//Inclusion des differentes librairies
+	require "../../lib/fonctions.php";
+	require "../../lib/mysql.php";
+	require "../../lib/psql.php";
 }
 // ----- Containers Docker ----- //
 $containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");

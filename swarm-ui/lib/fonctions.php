@@ -116,6 +116,13 @@ function setContainer($containerID,$containerSet,$server){
   restRequest("PUT",$url,$uri,"",$containerSet);                           
 } 
 
+/**** Function unsetContainer CONSUL ****/
+function unsetContainer($containerID,$server){
+  $url = $server['consul']['url'];
+  $uri = $server['consul']['store_keys']."/containers/".$containerID;
+  restRequest("DELETE",$url,$uri);
+}
+
 /**** Fonction de curl ****/                  
 function restRequest($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) { 
                                           

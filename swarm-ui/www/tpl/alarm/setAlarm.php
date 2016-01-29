@@ -1,5 +1,9 @@
 <?php
 	session_start();
+	if ( !isset($_SESSION['login_user']) ) {
+		header('Location: /');
+  		exit();
+	}
 	//Inclusion du fichier de configuration
 	require "../../../cfg/conf.php";
 	
