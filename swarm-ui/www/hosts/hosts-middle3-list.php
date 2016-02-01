@@ -28,27 +28,30 @@
 					$button_actif="active";
 					switch ($valueContainerDocker->status) {
 						case "Up":
-						$label="label-success";
-						$stat="running";
-						$icon="glyphicon glyphicon-off";
-						$label_action="label-danger";
-						$button_action="Stop";
-						break;
+							$label="label-success";
+							$stat="running";
+							$icon="glyphicon glyphicon-off";
+							$label_action="label-danger";
+							$button_action="stop";
+							$describe="Stop container";
+							break;
 						case "Exited":
-						$label="label-warning";
-						$stat="stopped";
-						$icon="glyphicon glyphicon-play";
-						$label_action="label-success";
-						$button_action="Start";
-						break;
+							$label="label-warning";
+							$stat="stopped";
+							$icon="glyphicon glyphicon-play";
+							$label_action="label-success";
+							$button_action="start";
+							$describe="Start container";
+							break;
 						default:                                                                                                                                                                          
-						$label="label-danger";                                                                                                                                                          
-						$stat="unknown";                                                                                                                                                                
-						$icon="glyphicon glyphicon-play";
-						$label_action="label-success";
-						$button_action="Start";
-						$button_actif="disabled";
-						break;
+							$label="label-danger";                                                                                                                                                          
+							$stat="unknown";                                                                                                                                                                
+							$icon="glyphicon glyphicon-play";
+							$label_action="label-success";
+							$button_action="start";
+							$button_actif="disabled";
+							$describe="Start container";
+							break;
 					}
 					print "<tr>";
 					print "<td>";
@@ -61,7 +64,7 @@
 					print $valueContainerDocker->serviceName;
 					print "</td>";
 					print "<td>";
-					$actionCall = "'".$button_action."','".$valueContainerDocker->nodeName."','".$valueContainerDocker->id."'";
+					$actionCall = "'".$button_action."','".$valueContainerDocker->nodeName."','".$valueContainerDocker->id."','".$describe."'";
 					if ( $button_actif == "active"){
 						print "<button type='button' id='button_agent_action".$t."' onclick=\"actionContainer(".$actionCall.")\" class='btn btn-sm btn-default' style='padding: 4px;' autocomplete='off'>";
 					} else {

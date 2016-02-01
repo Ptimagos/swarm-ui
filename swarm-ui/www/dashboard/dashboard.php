@@ -93,44 +93,57 @@ if ( !isset($server['projectName']) ) {
 	</div>	
 </div>
 <script type="text/javascript">
-function actionContainer(action,host_id,container_id) {
-  $('#tasksAction').modal('show');
-  url = "tpl/hosts/actionContainer.php";
-  method = "post";
-  $.ajax({
-    type: method,
-    url: url,
-    data: {actionCont: action,hostId: host_id,containerId: container_id},
-    success: function (data) {
-      jQuery("#actionCont").html(data);
-      setTimeout(function(){
-        $('#tasksAction').modal('hide');
-      }, 3000);
-      setTimeout(function(){
-        $('#body-middle-container_0003').load('dashboard/dashboard-middle3.php');
-        $('#body-middle-container_0004').load('dashboard/dashboard-middle4.php');
-      }, 3300);
-    }  
-  });
-}
-function dashWrapper(page){
-    var containerRootName="#body-middle-container_000";
-    var containerWrapperName="#wrapper-dash_000";
-    var totalDashElem=5+1;
-  var currentContainer=page;
-  for (var i = 1; i < totalDashElem; i++ ) {
-    if(i!=currentContainer){
-      $(containerRootName+i).addClass('collapse');
-      $(containerRootName+i).removeClass('collapse.in');
-      $(containerWrapperName+i).removeClass('active');
-    }
-  }
-  $(containerRootName+currentContainer).removeClass('collapse');
-  $(containerRootName+currentContainer).addClass('collapse.in');
-  $(containerWrapperName+currentContainer).addClass('active');
-}
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("active");
-});
+	function actionContainer(action,host_id,container_id,describe) {
+		$('#tasksAction').modal('show');
+		url = "tpl/actionLoader.php";
+		method = "post";
+		$.ajax({
+			type: method,
+			url: url,
+			data: {hostId: host_id,containerId: container_id,describeAction: describe},
+			success: function (data) {
+				jQuery("#actionCont").html(data);
+				url = "tpl/hosts/actionContainer.php";
+				method = "post";
+				$.ajax({
+					type: method,
+					url: url,
+					data: {actionCont: action,hostId: host_id,containerId: container_id,describeAction: describe},
+					success: function (data) {
+						jQuery("#actionCont").html(data);
+						setTimeout(function(){
+							$('#tasksAction').modal('hide');
+						}, 2000);
+						setTimeout(function(){
+							$('#body-middle-container_0001').load('dashboard/dashboard-middle1.php');
+							$('#body-middle-container_0002').load('dashboard/dashboard-middle2.php');
+							$('#body-middle-container_0003').load('dashboard/dashboard-middle3.php');
+							$('#body-middle-container_0004').load('dashboard/dashboard-middle4.php');
+							$('#wrapper-instances').load('alarms/dashboard-wrapper-containers-alarm.php');
+						}, 2300);
+					} 
+				});
+			}
+		});
+	}
+	function dashWrapper(page){
+		var containerRootName="#body-middle-container_000";
+		var containerWrapperName="#wrapper-dash_000";
+		var totalDashElem=5+1;
+		var currentContainer=page;
+		for (var i = 1; i < totalDashElem; i++ ) {
+			if(i!=currentContainer){
+				$(containerRootName+i).addClass('collapse');
+				$(containerRootName+i).removeClass('collapse.in');
+				$(containerWrapperName+i).removeClass('active');
+			}
+		}
+		$(containerRootName+currentContainer).removeClass('collapse');
+		$(containerRootName+currentContainer).addClass('collapse.in');
+		$(containerWrapperName+currentContainer).addClass('active');
+	}
+	$("#menu-toggle").click(function(e) {
+		e.preventDefault();
+		$("#wrapper").toggleClass("active");
+	});
 </script>

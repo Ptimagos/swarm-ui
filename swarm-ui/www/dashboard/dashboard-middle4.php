@@ -38,9 +38,9 @@ $taskDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui
 							<th class="col-xs-2">Action</th>
 							<th class="col-xs-2">Server</th>
 							<th class="col-xs-3">Status</th>
+							<th class="col-xs-1"></th>
 							<th class="col-xs-2">Start</th>
 							<th class="col-xs-2">End</th>
-							<th class="col-xs-1"></th>
 						</tr>
 					</table>
 				</div>
@@ -74,59 +74,28 @@ $taskDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui
 						$getProgressBar = getBarProgress($valueTaskDocker->stat,$valueTaskDocker->progress);
 						print $getProgressBar;
 						print "</td>";
+						print "</td>";
+						print "<td class='col-xs-1'>";
+						print "</td>";
 						print "<td class='col-xs-2'>";
 						if (isset($valueTaskDocker->startDate))
 						{
-							print $valueTaskDocker->startDate;
+							echo date("Y-m-d H:i:s",$valueTaskDocker->startDate);
 						}
 						print "</td>";
 						print "<td class='col-xs-2'>";
 						if (isset($valueTaskDocker->endDate))
 						{
-							print $valueTaskDocker->endDate;
+							echo date("Y-m-d H:i:s",$valueTaskDocker->endDate);
 						}
-						print "</td>";
-						print "<td class='col-xs-1'>";
-						print "</td>";
 						print "</tr>";
 						print "</table>";
 						print "</a>";
 						print "</div>";
 						print '<div id="collapse'.$x.'" class="panel-collapse collapse '.$collapseIn.'" role="tabpanel" aria-labelledby="headingOne">';
 						print '<div class="panel-body" style="padding: 0px;">';
-						$arr_step_length=2;
-						for($s=1;$s<$arr_step_length;$s++) 
-						{
-							print "<table class='table' style='margin-bottom: 0px;'>";		
-							print "<tr style='width: 100%;'>";
-							print "<td class='col-xs-2'>";
-							print $valueTaskDocker->describe;
-							print "</td>";
-							print "<td class='col-xs-2'>";
-							print "</td>";
-							print "<td class='col-xs-3'>";
-							$getProgressBar = getBarProgress($valueTaskDocker->stat,$valueTaskDocker->progress);
-							print $getProgressBar;
-							print "</td>";
-							print "<td class='col-xs-2'>";
-							if (isset($valueTaskDocker->startDate))
-							{
-								print $valueTaskDocker->startDate;
-							}
-							print "</td>";
-							print "<td class='col-xs-2'>";
-							if (isset($valueTaskDocker->endDate))
-							{
-								print $valueTaskDocker->endDate;
-							}
-							print "</td>";
-							print "<td class='col-xs-1'>";
-							if (isset($valueTaskDocker->logs)) {
-								print "<a href='#' onclick=\"viewLogTasks('".$valueTaskDocker->logs."')\" >log</a>";
-							}
-							print "</td>";
-							print "</tr>";
-							print "</table>";
+						if (isset($valueTaskDocker->logs)) {
+							print $valueTaskDocker->logs;
 						}
 						print "</div>";
 						print "</div>";

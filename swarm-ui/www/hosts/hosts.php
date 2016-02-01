@@ -1,6 +1,10 @@
 <?PHP
 if ( !isset($server['projectName']) ) {
 	session_start();
+	if ( !isset($_SESSION['login_user']) ) {
+		header('Location: /');
+  		exit();
+	}
 	//Inclusion du fichier de configuration
 	require "../../cfg/conf.php";
 	
@@ -50,50 +54,27 @@ if ( !isset($server['projectName']) ) {
 	</div>
 	<!-- Page content -->
 	<div id="page-content-wrapper">
-        <!-- Keep all page content within the page-content inset div! -->
-
-	 <!-- Middle Container -->
-    <div class="col-xs-12 collapse.in" id="body-host-middle-container_0001">
-		<?PHP include "hosts-middle1.php"; ?>
+		<!-- Keep all page content within the page-content inset div! -->
+		<!-- Middle Container -->
+		<div class="col-xs-12 collapse.in" id="body-host-middle-container_0001">
+			<?PHP include "hosts-middle1.php"; ?>
+		</div>
+		<div class="col-xs-12 collapse" id="body-host-middle-container_0002">
+			<?PHP include "hosts-middle2.php"; ?>
+		</div>
+		<div class="col-xs-12 collapse" id="body-host-middle-container_0003">
+		</div>
+		<div class="col-xs-12 collapse" id="body-host-middle-container_0004">
+			<?PHP include "../dashboard/dashboard-middle4.php"; ?>
+		</div>
+		<!-- End Middle Container -->
 	</div>
-	<div class="col-xs-12 collapse" id="body-host-middle-container_0002">
-		<?PHP include "hosts-middle2.php"; ?>
-	</div>
-	<div class="col-xs-12 collapse" id="body-host-middle-container_0003">
-	</div>
-	<div class="col-xs-12 collapse" id="body-host-middle-container_0004">
-		<?PHP include "../dashboard/dashboard-middle4.php"; ?>
-    </div>
-	
-        <!-- End Middle Container -->
-      </div>
-      
-    </div>
+</div>
 <script type="text/javascript">
-function actionContainer(action,host_id,container_id) {
-  $('#tasksAction').modal('show');
-  url = "tpl/hosts/actionContainer.php";
-  method = "post";
-  $.ajax({
-    type: method,
-    url: url,
-    data: {actionCont: action,hostId: host_id,containerId: container_id},
-    success: function (data) {
-      jQuery("#actionCont").html(data);
-      setTimeout(function(){
-        $('#tasksAction').modal('hide');
-      }, 3000);
-      setTimeout(function(){
-        $("#body-host-middle-container_0003").load("hosts/hosts-middle3.php");
-        $("#body-host-middle-container_0004").load("dashboard/dashboard-middle4.php");
-      }, 3300);
-    }  
-  });
-}
 function hostsWrapper(page){
-    var containerRootName="#body-host-middle-container_000";
+	var containerRootName="#body-host-middle-container_000";
 	var containerWrapperName="#wrapper-hosts_000";
-    var totalDashElem=4+1;
+	var totalDashElem=4+1;
 	var currentContainer=page;
 	for (var i = 1; i < totalDashElem; i++ ) {
 		if(i!=currentContainer){

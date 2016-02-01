@@ -3,7 +3,7 @@ if ( !isset($server['projectName']) ) {
 	session_start();
 	if ( !isset($_SESSION['login_user']) ) {
 		header('Location: /');
-  		exit();
+		exit();
 	}
 	//Inclusion du fichier de configuration
 	require "../../cfg/conf.php";
@@ -46,10 +46,10 @@ $valueDocker = json_decode($nodeDockerValue);
 					<?PHP
 					switch ($registerHost) {
 						case 'offline':
-							print "<span class='col-xs-3 col-md-2 label label-danger'><h4>Server is offline</h4></span>";
+						print "<span class='col-xs-3 col-md-2 label label-danger'><h4>Server is offline</h4></span>";
 						break;
 						case 'done':
-							include "hosts-middle3-infoServer.php";
+						include "hosts-middle3-infoServer.php";
 						break;
 					}
 					?>
@@ -75,23 +75,37 @@ $valueDocker = json_decode($nodeDockerValue);
 						$(containerRootName+currentContainer).load('hosts/hosts-middle1.php');
 						$(containerRootName+currentContainer).addClass('collapse.in');
 					}
-					function actionContainer(action,host_id,container_id,instance_id) {
+					function actionContainer(action,host_id,container_id,describe) {
 						$('#tasksAction').modal('show');
-						url = "tpl/hosts/actionContainer.php";
+						url = "tpl/actionLoader.php";
 						method = "post";
 						$.ajax({
 							type: method,
 							url: url,
-							data: {actionCont: action,hostId: host_id,containerId: container_id,instanceId: instance_id},
+							data: {hostId: host_id,containerId: container_id,describeAction: describe},
 							success: function (data) {
 								jQuery("#actionCont").html(data);
-								setTimeout(function(){
-									$('#tasksAction').modal('hide');
-								}, 2000);
-								setTimeout(function(){
-									$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
-								}, 2300);
-							}	 
+								url = "tpl/hosts/actionContainer.php";
+								method = "post";
+								$.ajax({
+									type: method,
+									url: url,
+									data: {actionCont: action,hostId: host_id,containerId: container_id,describeAction: describe},
+									success: function (data) {
+										jQuery("#actionCont").html(data);
+										setTimeout(function(){
+											$('#tasksAction').modal('hide');
+										}, 2000);
+										setTimeout(function(){
+											$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
+											$("#body-host-middle-container_0004").load("dashboard/dashboard-middle4.php");
+											//$('#body-middle-container_0003').load('dashboard/dashboard-middle3.php');
+											//$('#body-middle-container_0004').load('dashboard/dashboard-middle4.php');
+											//$('#wrapper-instances').load('alarms/dashboard-wrapper-containers-alarm.php');
+										}, 2300);
+									} 
+								});
+							}
 						});
 					}
 					function actionAgent(action,host_id) {
