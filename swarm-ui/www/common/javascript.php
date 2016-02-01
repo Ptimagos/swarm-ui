@@ -36,3 +36,27 @@
 </script>
 -->
 <!-- Include Jquery here in a script tag -->
+
+<script type="text/javascript">
+function actionAgent(action,host_id) {
+  $('#tasksAction').modal('show');
+  url = "tpl/hosts/actionAgent.php";
+  method = "post";
+  $.ajax({
+    type: method,
+    url: url,
+    data: {actionCont: action,hostId: host_id},
+    success: function (data) {
+      jQuery("#actionCont").html(data);
+      setTimeout(function(){
+        $('#tasksAction').modal('hide');
+      }, 2000);
+      setTimeout(function(){
+        $('#body-middle-container_0002').load('dashboard/dashboard-middle2.php');
+        $("#body-host-middle-container_0003").load("hosts/hosts-middle3.php");
+      }, 2300);
+    }  
+  });
+}
+</script>
+

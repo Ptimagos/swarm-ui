@@ -59,6 +59,23 @@ include "checks/docker-swarm-containers.php"
 </div>
 <!-- end modal -->
 
+<!-- Modal -->
+<div id="tasksAction" class="modal fade" data-backdrop="static" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="actionCont"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal -->
+
 <script type="text/javascript">
     $(document).ready(function(){
          $("#home").click(function(){

@@ -123,6 +123,13 @@ function unsetContainer($containerID,$server){
   restRequest("DELETE",$url,$uri);
 }
 
+/**** Function createTask CONSUL ****/                                    
+function createTask($host,$containerID,$action,$timestamp,$server){                         
+  $url = $server['consul']['url'];                                    
+  $uri = $server['consul']['store_keys']."/tasks/".$timestamp;         
+  restRequest("PUT",$url,$uri,"",$action);                           
+} 
+
 /**** Fonction de curl ****/                  
 function restRequest($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) { 
                                           

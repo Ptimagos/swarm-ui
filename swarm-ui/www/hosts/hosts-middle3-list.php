@@ -32,21 +32,21 @@
 						$stat="running";
 						$icon="glyphicon glyphicon-off";
 						$label_action="label-danger";
-						$button_action="stop";
+						$button_action="Stop";
 						break;
 						case "Exited":
 						$label="label-warning";
 						$stat="stopped";
 						$icon="glyphicon glyphicon-play";
 						$label_action="label-success";
-						$button_action="start";
+						$button_action="Start";
 						break;
 						default:                                                                                                                                                                          
 						$label="label-danger";                                                                                                                                                          
 						$stat="unknown";                                                                                                                                                                
 						$icon="glyphicon glyphicon-play";
 						$label_action="label-success";
-						$button_action="start";
+						$button_action="Start";
 						$button_actif="disabled";
 						break;
 					}
@@ -63,9 +63,9 @@
 					print "<td>";
 					$actionCall = "'".$button_action."','".$valueContainerDocker->nodeName."','".$valueContainerDocker->id."'";
 					if ( $button_actif == "active"){
-						print "<button type='button' id='button_agent_action".$x."' onclick=\"actionContainer(".$actionCall.")\" class='btn btn-sm btn-default' style='padding: 4px;' autocomplete='off'>";
+						print "<button type='button' id='button_agent_action".$t."' onclick=\"actionContainer(".$actionCall.")\" class='btn btn-sm btn-default' style='padding: 4px;' autocomplete='off'>";
 					} else {
-						print "<button type='button' id='button_agent_action".$x."' class='btn btn-sm btn-default disabled' style='padding: 4px;' autocomplete='off'>";
+						print "<button type='button' id='button_agent_action".$t."' class='btn btn-sm btn-default disabled' style='padding: 4px;' autocomplete='off'>";
 					}
 					print "<span class='label ".$label_action." ".$icon."' style='font-size: 100%;top: 1.5px;'> </span></button>";
 					print "<td>";

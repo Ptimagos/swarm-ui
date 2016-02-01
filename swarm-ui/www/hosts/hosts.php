@@ -70,6 +70,26 @@ if ( !isset($server['projectName']) ) {
       
     </div>
 <script type="text/javascript">
+function actionContainer(action,host_id,container_id) {
+  $('#tasksAction').modal('show');
+  url = "tpl/hosts/actionContainer.php";
+  method = "post";
+  $.ajax({
+    type: method,
+    url: url,
+    data: {actionCont: action,hostId: host_id,containerId: container_id},
+    success: function (data) {
+      jQuery("#actionCont").html(data);
+      setTimeout(function(){
+        $('#tasksAction').modal('hide');
+      }, 3000);
+      setTimeout(function(){
+        $("#body-host-middle-container_0003").load("hosts/hosts-middle3.php");
+        $("#body-host-middle-container_0004").load("dashboard/dashboard-middle4.php");
+      }, 3300);
+    }  
+  });
+}
 function hostsWrapper(page){
     var containerRootName="#body-host-middle-container_000";
 	var containerWrapperName="#wrapper-hosts_000";

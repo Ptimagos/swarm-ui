@@ -37,19 +37,30 @@ for($x = 0; $x < $arrlength; $x++){
     $checkNodeStatusValue = base64_decode($checkNodeStatus[0]['Value']);
     $valueCheckNodeStatus = json_decode($checkNodeStatusValue);
     if ( $valueCheckNodeStatus->status == "Healthy"){
-      $checkLocalContainer = restRequestSSL("GET",$valueCheckNodeStatus->url."/containers/".$value->id."/json");
+      $checkLocalContainer = restRequestSSL("GET",$valueCheckNodeStatus->url,"/containers/".$value->id."/json");
       if (isset($checkLocalContainer['Id'])){
-        $status="Exited";
+        switch ($checkLocalContainer['State']['Status']) {
+          case 'running':
+            $status="Up";
+            break;
+          case 'exited':
+            $status="Exited";
+            break;
+          default:
+            $status=$checkLocalContainer['State']['Status'];
+            break;
+        }
       } else {
         $status="Delete";
       }
     } else {
       $status="Unknown";
+      $uptime="Unknown";
     }
     if ($status == "Delete"){
       unsetContainer($table,$server);
     } else {
-      $swarmSet = '{"nodeName":"'.$value->nodeName.'","id":"'.$value->id.'","image":"'.$value->image.'","serviceName":"'.$value->serviceName.'","status":"'.$status.'","uptime":"Unknown"}';
+      $swarmSet = '{"nodeName":"'.$value->nodeName.'","id":"'.$value->id.'","image":"'.$value->image.'","serviceName":"'.$value->serviceName.'","status":"'.$status.'","uptime":"'.$uptime.'"}';
       setContainer($table,$swarmSet,$server);
     }
   }

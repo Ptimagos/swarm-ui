@@ -69,21 +69,21 @@ Place informations here and action button ...
 				$stat="running";
 				$icon="glyphicon glyphicon-off";
 				$label_action="label-danger";
-				$button_action="stop";
+				$button_action="Stop";
 				break;
 			case "Exited":
 				$label="label-warning";
 				$stat="stopped";
 				$icon="glyphicon glyphicon-play";
 				$label_action="label-success";
-				$button_action="start";
+				$button_action="Start";
 				break;
 			default:                                                                                                                                                                          
 				$label="label-danger";                                                                                                                                                          
 				$stat="unknown";                                                                                                                                                                
 				$icon="glyphicon glyphicon-play";
 				$label_action="label-success";
-				$button_action="start";
+				$button_action="Start";
 				$button_actif="disabled";
 				break;
 		}
