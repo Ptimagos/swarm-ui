@@ -18,6 +18,11 @@ $host_id = $_GET['host_id'];
 $nodesDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes","?recurse");
 $nodeDockerValue = base64_decode($nodesDocker[$host_id]['Value']);
 $valueDocker = json_decode($nodeDockerValue);
+// ----- Containers Docker ----- //
+$containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");
+$nb_containerDocker = count($containersDocker);
+
+include "../tpl/hosts/hosts-modal.php";
 ?>
 
 <!-- Main component for a primary marketing message or call to action -->
@@ -98,6 +103,7 @@ $valueDocker = json_decode($nodeDockerValue);
 										}, 2000);
 										setTimeout(function(){
 											$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
+											$("#body-host-middle-container_0001").load("hosts/hosts-middle1.php");
 											$("#body-host-middle-container_0004").load("dashboard/dashboard-middle4.php");
 											//$('#body-middle-container_0003').load('dashboard/dashboard-middle3.php');
 											//$('#body-middle-container_0004').load('dashboard/dashboard-middle4.php');

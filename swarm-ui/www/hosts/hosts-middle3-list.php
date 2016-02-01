@@ -16,9 +16,6 @@
 				<th class='col-xs-2'>Status</th>
 			</tr>
 			<?php
-			// ----- Containers Docker ----- //
-			$containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");
-			$nb_containerDocker = count($containersDocker);
 			for($t=0;$t<$nb_containerDocker;$t++)
 			{
 				$containerDockerValue = base64_decode($containersDocker[$t]['Value']);

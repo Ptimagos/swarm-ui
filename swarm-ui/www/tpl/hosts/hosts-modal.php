@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div id="addCont" class="modal fade" data-backdrop="static" role="dialog">
+<div id="addImage" class="modal fade" data-backdrop="static" role="dialog">
 	<div class="modal-dialog">
 		<!-- Modal content-->
 		<div class="modal-content">
@@ -8,10 +8,10 @@
 			</div>
 			<div class="modal-body">
 				<div class="row">
-					<form  id="searchCont" action="tpl/hosts/searchDockerCont.php" method="post">
+					<form  id="searchCont" action="tpl/hosts/searchImages.php" method="post">
 						<div class="col-md-12">
 							<div class="input-group">
-								<input type="hidden" name="host_id" value="<?PHP print $host_id; ?>">
+								<input type="hidden" name="host_id" value="<?PHP print $valueDocker->name; ?>">
 								<input type="text" name="search" class="form-control" placeholder="Search image...">
 								<span class="input-group-btn">
 									<button id="btnSearch" onClick="searchDockerCont()" class="btn btn-default glyphicon glyphicon-search" style="top:0;" type="button"></button>
@@ -98,29 +98,12 @@
 </div>
 <!-- end modal -->
 
-<!-- Modal -->
-<div id="tasksAction" class="modal fade" data-backdrop="static" role="dialog">
-	<div class="modal-dialog">
-		<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-body">
-				<div class="row">
-					<div class="col-md-12">
-						<div id="actionCont"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- end modal -->
-
 
 <script type="text/javascript">
 $("form").keypress(function(e) {
   //Enter key
   if (e.which == 13) {
-    return false;
+  	return false;
   }
 });
 function createDockerCont() {
@@ -129,8 +112,8 @@ function createDockerCont() {
 	var frm5 = $("#formCreateCont");
 	$.ajax({
 		type: frm5.attr('method'),
-        url: frm5.attr('action'),
-        data: frm5.serialize(),
+		url: frm5.attr('action'),
+		data: frm5.serialize(),
 		success: function (data) {
 			jQuery("#createdCont").html(data);
 			setTimeout(function(){
@@ -143,13 +126,13 @@ function createDockerCont() {
 	});
 }
 function installDockerImage() {
-	$('#addCont').modal('hide');
+	$('#addImage').modal('hide');
 	$('#tasksInstallImg').modal('show');
 	var frm4 = $("#installDockerImages");
 	$.ajax({
 		type: frm4.attr('method'),
-        url: frm4.attr('action'),
-        data: frm4.serialize(),
+		url: frm4.attr('action'),
+		data: frm4.serialize(),
 		success: function (data) {
 			jQuery("#addedImage").html(data);
 			setTimeout(function(){
@@ -163,12 +146,12 @@ function installDockerImage() {
 }
 function searchDockerCont() {
 	$("#btnSearch").addClass('disabled');
-	$("#resultSearch").load('tpl/actionsBarResult.php?getStatus=start&progress=50');
+	$("#resultSearch").load('tpl/actionsBarResult.php?getStatus=starting&progress=100');
 	var frm3 = $("#searchCont");
 	$.ajax({
 		type: frm3.attr('method'),
-        url: frm3.attr('action'),
-        data: frm3.serialize(),
+		url: frm3.attr('action'),
+		data: frm3.serialize(),
 		success: function (data) {
 			$("#btnSearch").removeClass('disabled');
 			jQuery("#resultSearch").html(data);

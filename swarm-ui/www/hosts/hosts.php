@@ -13,7 +13,7 @@ if ( !isset($server['projectName']) ) {
 	require "../../lib/mysql.php";
 	require "../../lib/psql.php";
 
-	include "../tpl/hosts/hosts-add-host-modal.php";
+	//include "../tpl/hosts/hosts-add-host-modal.php";
 }
 ?>
 <div id="wrapper">     

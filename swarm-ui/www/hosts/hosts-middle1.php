@@ -139,7 +139,7 @@ function loadHost(item){
 	}
 	$(containerRootName+currentContainer).removeClass('collapse');
 	$(containerRootName+currentContainer).addClass('collapse.in');
-    $(containerRootName+currentContainer).load(uri);
+  $(containerRootName+currentContainer).load(uri);
 }
 </script>
 </div>

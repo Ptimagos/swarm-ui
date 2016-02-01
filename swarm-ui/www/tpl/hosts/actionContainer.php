@@ -27,6 +27,8 @@ $checkStatBefor = restRequestSSL("GET",$nodeInfoValue->url,"/containers/".$actio
 $logs = restRequestSSL("POST",$nodeInfoValue->url,"/containers/".$actionContainerID."/".$action);
 $checkStatAfter = restRequestSSL("GET",$nodeInfoValue->url,"/containers/".$actionContainerID."/json");
 
+sleep(2);
+
 include "../../checks/docker-daemon.php";
 include "../../checks/docker-swarm-manager.php";
 include "../../checks/docker-swarm-containers.php";
