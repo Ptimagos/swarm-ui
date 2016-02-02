@@ -49,7 +49,7 @@ $containerSet = '{"nodeName":"'.$host.'","containerID":"'.$actionContainerID
 				.'","action":"'.$action.'","stat":"'.$status
 				.'","describe":"'.$describe.'","progress":"100","startDate":"'.$startDate
 				.'","endDate":"'.$endDate.'","logs":"'.$logs.'"}';
-createTask($host,$containerID,$containerSet,$jobId,$server);
+createTask($containerSet,$jobId,$server);
 
 print "<h4>".$describe." <b class='font-db-danger'>".$actionContainerID."</b> on host ".$host."</h4>";
 

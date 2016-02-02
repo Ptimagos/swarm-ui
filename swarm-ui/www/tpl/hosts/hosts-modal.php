@@ -4,7 +4,7 @@
 		<!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title">Add Image</h4>
+				<h4 class="modal-title">Pull Image</h4>
 			</div>
 			<div class="modal-body">
 				<div class="row">
@@ -12,6 +12,7 @@
 						<div class="col-md-12">
 							<div class="input-group">
 								<input type="hidden" name="host_id" value="<?PHP print $valueDocker->name; ?>">
+								<input type="hidden" name="url" value="<?PHP print $valueDocker->url; ?>">
 								<input type="text" name="search" class="form-control" placeholder="Search image...">
 								<span class="input-group-btn">
 									<button id="btnSearch" onClick="searchDockerCont()" class="btn btn-default glyphicon glyphicon-search" style="top:0;" type="button"></button>
@@ -118,25 +119,6 @@ function createDockerCont() {
 			jQuery("#createdCont").html(data);
 			setTimeout(function(){
 				$('#tasksCreateCont').modal('hide');
-			}, 2000);
-			setTimeout(function(){
-				$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
-			}, 2300);
-		}	 
-	});
-}
-function installDockerImage() {
-	$('#addImage').modal('hide');
-	$('#tasksInstallImg').modal('show');
-	var frm4 = $("#installDockerImages");
-	$.ajax({
-		type: frm4.attr('method'),
-		url: frm4.attr('action'),
-		data: frm4.serialize(),
-		success: function (data) {
-			jQuery("#addedImage").html(data);
-			setTimeout(function(){
-				$('#tasksInstallImg').modal('hide');
 			}, 2000);
 			setTimeout(function(){
 				$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");

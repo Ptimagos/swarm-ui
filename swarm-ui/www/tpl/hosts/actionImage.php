@@ -14,7 +14,7 @@ require "../../../lib/psql.php";
 
 	
 // Define $hostname and $ipaddr
-$host_id = $_POST['host_id'];
+$host = $_POST['hostId'];
 $image = $_POST['image'];
 $url = $_POST['url'];
 $action=$_POST['actionImg'];
@@ -22,7 +22,7 @@ $describe=$_POST['describeAction'];
 $jobId=time()."-".rand();
 $startDate=time();
 
-$logs = restRequestSSL("POST",$url,"/images/create","?fromImage=".$image);
+$logs = restRequestSSL("POST",$url,"/images/create","?fromImage=".$image.":latest");
 
 sleep(2);
 
@@ -42,9 +42,9 @@ $imageSet = '{"nodeName":"'.$host.'","image":"'.$image
 				.'","action":"'.$action.'","stat":"'.$status
 				.'","describe":"'.$describe.'","progress":"100","startDate":"'.$startDate
 				.'","endDate":"'.$endDate.'","logs":"'.$logs.'"}';
-createTask($containerSet,$jobId,$server);
+createTask($imageSet,$jobId,$server);
 
-print "<h4>".$describe." <b class='font-db-danger'>".$actionContainerID."</b> on host ".$host."</h4>";
+print "<h4>".$describe." <b class='font-db-danger'>".$image."</b> on host ".$host."</h4>";
 
 $getProgressBar = getBarProgress($status,'100');
 print $getProgressBar;

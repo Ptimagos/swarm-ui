@@ -114,6 +114,35 @@ include "../tpl/hosts/hosts-modal.php";
 							}
 						});
 					}
+					function actionImage() {
+						$('#addImage').modal('hide');
+						$('#tasksAction').modal('show');
+						url = "tpl/actionLoader.php";
+						method = "post";
+						var frm4 = $("#installDockerImages");
+						$.ajax({
+							type: method,
+							url: url,
+							data: frm4.serialize(),
+							success: function (data) {
+								jQuery("#actionCont").html(data);
+								$.ajax({
+									type: frm4.attr('method'),
+									url: frm4.attr('action'),
+									data: frm4.serialize(),
+									success: function (data) {
+										jQuery("#actionCont").html(data);
+										setTimeout(function(){
+											$('#tasksAction').modal('hide');
+										}, 10000);
+										setTimeout(function(){
+											$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
+										}, 10300);
+									}	 
+								});
+							}
+						});
+					}
 					function actionAgent(action,host_id) {
 						$('#tasksAction').modal('show');
 						url = "tpl/hosts/actionAgent.php";

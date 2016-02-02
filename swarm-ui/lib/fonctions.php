@@ -124,7 +124,7 @@ function unsetContainer($containerID,$server){
 }
 
 /**** Function createTask CONSUL ****/                                    
-function createTask($host,$containerID,$action,$timestamp,$server){                         
+function createTask($action,$timestamp,$server){                         
   $url = $server['consul']['url'];                                    
   $uri = $server['consul']['store_keys']."/tasks/".$timestamp;         
   restRequest("PUT",$url,$uri,"",$action);                           
@@ -149,11 +149,15 @@ function restRequest($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) {
     CURLOPT_CUSTOMREQUEST => $method, // GET POST PUT PATCH DELETE HEAD OPTIONS
     CURLOPT_SSL_VERIFYPEER => false, // No Verify SSL
     CURLOPT_POSTFIELDS => $json,
+    CURLOPT_TIMEOUT => 10,
+    CURLOPT_CONNECTTIMEOUT => 600,
   );
   curl_setopt_array($curl_handle,($options + $curl_option_defaults));
 
   // send request and wait for responce 
   $responce =  json_decode(curl_exec($curl_handle),true);
+
+  curl_close($curl_handle);
 
   // Return resultat                
   return $responce;
@@ -183,11 +187,15 @@ function restRequestSSL($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) 
     CURLOPT_SSLCERT => "/opt/swarm-ui/certs/cert.pem",
     CURLOPT_SSLKEY => "/opt/swarm-ui/certs/key.pem",
     CURLOPT_POSTFIELDS => $json,
+    CURLOPT_TIMEOUT => 10,
+    CURLOPT_CONNECTTIMEOUT => 600,
   );
   curl_setopt_array($curl_handle,($options + $curl_option_defaults));
 
   // send request and wait for responce 
   $responce =  json_decode(curl_exec($curl_handle),true);
+
+  curl_close($curl_handle);
 
   // Return resultat                
   return $responce;

@@ -3,7 +3,7 @@
 		Action <span class="caret"></span>
 	</button>
 	<ul class="dropdown-menu">
-		<li><a href="#" data-toggle="modal" data-target="#addImage">Add Image</a></li>
+		<li><a href="#" data-toggle="modal" data-target="#addImage">Pull Image</a></li>
 		<?PHP
 		if ($nb_containerDocker != 0){
 			$createActive="class=''";
