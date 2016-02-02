@@ -15,9 +15,9 @@ if ( !isset($server['projectName']) ) {
 }
 $containers_down = 0;
 $containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");
-$nb_containersDocker = count($containersDocker);
+$nb_containersDocker = count($containersDocker['responce']);
 for($x=0;$x<$nb_containersDocker;$x++){
-	$containerDockerValue = base64_decode($containersDocker[$x]['Value']);
+	$containerDockerValue = base64_decode($containersDocker['responce'][$x]['Value']);
 	$valueDocker = json_decode($containerDockerValue);
 	switch ($valueDocker->status) {
 			case "Up":

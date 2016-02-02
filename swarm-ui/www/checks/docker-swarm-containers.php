@@ -5,20 +5,20 @@
 
 // Get Information about SWARM Cluster
 $swarm_p = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm/leader");
-$swarmPrimary = base64_decode($swarm_p[0]['Value']);
+$swarmPrimary = base64_decode($swarm_p['responce'][0]['Value']);
 
 // Get All containers in the cluster
 $containerInfos = restRequestSSL("GET","https://".$swarmPrimary,"/containers/json","?all=1");
 
 // Set Containers Information and status
 $checkContainers = array();
-$arrlength = count($containerInfos);
+$arrlength = count($containerInfos['responce']);
 
 for($x = 0; $x < $arrlength; $x++){
-  list($empty, $nodeName, $serviceName) =  explode("/", $containerInfos[$x]['Names'][0]);
-  list($status, $uptime) = explode(" ", $containerInfos[$x]['Status'], 2);
-  $containerID = substr($containerInfos[$x]['Id'], 0, 12);
-  $containerImage = $containerInfos[$x]['Image'];
+  list($empty, $nodeName, $serviceName) =  explode("/", $containerInfos['responce'][$x]['Names'][0]);
+  list($status, $uptime) = explode(" ", $containerInfos['responce'][$x]['Status'], 2);
+  $containerID = substr($containerInfos['responce'][$x]['Id'], 0, 12);
+  $containerImage = $containerInfos['responce'][$x]['Image'];
   $checkContainer[$containerID] = $containerID; 
   $containerSet = '{"nodeName":"'.$nodeName.'","id":"'.$containerID.'","image":"'.$containerImage.'","serviceName":"'.$serviceName.'","status":"'.$status.'","uptime":"'.$uptime.'"}';
   $table = $nodeName."-".$containerID;
@@ -27,19 +27,19 @@ for($x = 0; $x < $arrlength; $x++){
 
 // Check Status for all Swarm manager registored
 $listContainers = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");
-$arrlength = count($listContainers);
+$arrlength = count($listContainers['responce']);
 for($x = 0; $x < $arrlength; $x++){
-  $containerValue = base64_decode($listContainers[$x]['Value']);
+  $containerValue = base64_decode($listContainers['responce'][$x]['Value']);
   $value = json_decode($containerValue);
   if (isset($value->id) && !isset($checkContainer[$value->id])){
     $table = $value->nodeName."-".$value->id;
     $checkNodeStatus = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes/".$value->nodeName);
-    $checkNodeStatusValue = base64_decode($checkNodeStatus[0]['Value']);
+    $checkNodeStatusValue = base64_decode($checkNodeStatus['responce'][0]['Value']);
     $valueCheckNodeStatus = json_decode($checkNodeStatusValue);
     if ( $valueCheckNodeStatus->status == "Healthy"){
       $checkLocalContainer = restRequestSSL("GET",$valueCheckNodeStatus->url,"/containers/".$value->id."/json");
-      if (isset($checkLocalContainer['Id'])){
-        switch ($checkLocalContainer['State']['Status']) {
+      if (isset($checkLocalContainer['responce']['Id'])){
+        switch ($checkLocalContainer['responce']['State']['Status']) {
           case 'running':
             $status="Up";
             break;
@@ -47,7 +47,7 @@ for($x = 0; $x < $arrlength; $x++){
             $status="Exited";
             break;
           default:
-            $status=$checkLocalContainer['State']['Status'];
+            $status=$checkLocalContainer['responce']['State']['Status'];
             break;
         }
       } else {

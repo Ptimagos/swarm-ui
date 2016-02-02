@@ -5,17 +5,17 @@
 
 // Get Information about SWARM Cluster
 $swarm_p = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm/leader");
-$swarmPrimary = base64_decode($swarm_p[0]['Value']);
+$swarmPrimary = base64_decode($swarm_p['responce'][0]['Value']);
 $swarmInfos = restRequestSSL("GET","https://".$swarmPrimary,"/info");
 
 // Set Nodes Information and status
 $checkNodes = array();
-$arrlength = count($swarmInfos['DriverStatus']);
+$arrlength = count($swarmInfos['responce']['DriverStatus']);
 for($x = 4, $j = 5, $t = 9; $x < $arrlength; $x += 6, $j += 6, $t += 6){
-  $nodeName = $swarmInfos['DriverStatus'][$x][0];
-  $nodeServiceUrl = $swarmInfos['DriverStatus'][$x][1];
-  $nodeHealth = $swarmInfos['DriverStatus'][$j][1];
-  $nodeVersion = explode(" ",$swarmInfos['DriverStatus'][$t][1]);
+  $nodeName = $swarmInfos['responce']['DriverStatus'][$x][0];
+  $nodeServiceUrl = $swarmInfos['responce']['DriverStatus'][$x][1];
+  $nodeHealth = $swarmInfos['responce']['DriverStatus'][$j][1];
+  $nodeVersion = explode(" ",$swarmInfos['responce']['DriverStatus'][$t][1]);
   $checkNodes[$nodeName] = $nodeName; 
   $nodeSet = '{"name":"'.$nodeName.'","version":"'.$nodeVersion[3].'","url":"https://'.$nodeServiceUrl.'","status":"'.$nodeHealth.'"}';
   setNode($nodeName,$nodeSet,$server);
@@ -23,14 +23,17 @@ for($x = 4, $j = 5, $t = 9; $x < $arrlength; $x += 6, $j += 6, $t += 6){
 
 // Check Status for all Nodes registored
 $listNodes = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes","?recurse");
-$arrlength = count($listNodes);
+$arrlength = count($listNodes['responce']);
 for($x = 0; $x < $arrlength; $x++){
-  $nodeValue = base64_decode($listNodes[$x]['Value']);
+  $nodeValue = base64_decode($listNodes['responce'][$x]['Value']);
   $value = json_decode($nodeValue);
   if (isset($value->name) && !isset($checkNodes[$value->name])){
     $checkDirectAccess = restRequestSSL("GET",$value->url,"/version");
-    if (!isset($checkDirectAccess['Version'])) {
+    if (!isset($checkDirectAccess['responce']['Version'])) {
       $nodeSet = '{"name":"'.$value->name.'","version":"'.$value->version.'","url":"'.$value->url.'","status":"down"}';
+      setNode($value->name,$nodeSet,$server);
+    } elseif ($value->status == "down") {
+      $nodeSet = '{"name":"'.$value->name.'","version":"'.$value->version.'","url":"'.$value->url.'","status":"Healthy"}';
       setNode($value->name,$nodeSet,$server);
     }
   }

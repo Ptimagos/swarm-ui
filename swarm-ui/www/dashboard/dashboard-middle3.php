@@ -43,10 +43,10 @@ Place informations here and action button ...
 <th>Alarms</th>
 </tr>
 <?PHP
-	$nb_containersDocker = count($containersDocker);
+	$nb_containersDocker = count($containersDocker['responce']);
 	for($x=0;$x<$nb_containersDocker;$x++)
 	{
-		$containerDockerValue = base64_decode($containersDocker[$x]['Value']);
+		$containerDockerValue = base64_decode($containersDocker['responce'][$x]['Value']);
 		$valueDocker = json_decode($containerDockerValue);
 		print "<tr>";
 		print "<td>";

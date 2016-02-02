@@ -31,7 +31,7 @@ function getUserPassword($username,$server){
   $userPasswd = restRequest("GET",$url,$uri);
 
   // Return result               
-  return $userPasswd;
+  return $userPasswd['responce'];
 }
 
 /**** Function getUserInfo CONSUL ****/
@@ -41,7 +41,7 @@ function getUserInfo($username,$key,$server){
   $userInfo = restRequest("GET",$url,$uri);
 
   // Return result
-  return $userInfo;
+  return $userInfo['responce'];
 }
 
 /**** Function getNumberUpOrDown CONSUL ****/
@@ -71,7 +71,7 @@ function getAlarmStatus($name,$table,$server){
   $url = $server['consul']['url'];
   $uri = $server['consul']['store_keys']."/alarms/unset/".$table."/".$name;
   $alarmSet = restRequest("GET",$url,$uri);
-  return count($alarmSet);
+  return count($alarmSet['responce']);
 }
 
 /**** Function unSetAlarm CONSUL ****/
@@ -137,7 +137,7 @@ function restRequest($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) {
   $curl_option_defaults = array(    
     CURLOPT_HEADER => false,       
     CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_TIMEOUT => 2                              
+    CURLOPT_TIMEOUT => 600
   );                                                  
                                                       
   // Connect                                          
@@ -149,14 +149,14 @@ function restRequest($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) {
     CURLOPT_CUSTOMREQUEST => $method, // GET POST PUT PATCH DELETE HEAD OPTIONS
     CURLOPT_SSL_VERIFYPEER => false, // No Verify SSL
     CURLOPT_POSTFIELDS => $json,
-    CURLOPT_TIMEOUT => 10,
-    CURLOPT_CONNECTTIMEOUT => 600,
+    CURLOPT_FOLLOWLOCATION => true
   );
   curl_setopt_array($curl_handle,($options + $curl_option_defaults));
 
   // send request and wait for responce 
-  $responce =  json_decode(curl_exec($curl_handle),true);
-
+  $responce['encode'] =  curl_exec($curl_handle);
+  $responce['responce'] = json_decode($responce['encode'],true);  
+  $responce['info'] = curl_getinfo($curl_handle);
   curl_close($curl_handle);
 
   // Return resultat                
@@ -171,12 +171,12 @@ function restRequestSSL($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) 
   $curl_option_defaults = array(    
     CURLOPT_HEADER => false,       
     CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_TIMEOUT => 2                              
+    CURLOPT_TIMEOUT => 600
   );                                                  
                                                       
   // Connect                                          
   if(!isset($curl_handle)) $curl_handle = curl_init();
-                                    
+
   // Compose querry                 
   $options = array(                                            
     CURLOPT_URL => $url.$uri."".$querry,                                      
@@ -187,13 +187,14 @@ function restRequestSSL($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) 
     CURLOPT_SSLCERT => "/opt/swarm-ui/certs/cert.pem",
     CURLOPT_SSLKEY => "/opt/swarm-ui/certs/key.pem",
     CURLOPT_POSTFIELDS => $json,
-    CURLOPT_TIMEOUT => 10,
-    CURLOPT_CONNECTTIMEOUT => 600,
+    CURLOPT_FOLLOWLOCATION => true
   );
   curl_setopt_array($curl_handle,($options + $curl_option_defaults));
 
   // send request and wait for responce 
-  $responce =  json_decode(curl_exec($curl_handle),true);
+  $responce['encode'] =  curl_exec($curl_handle);
+  $responce['responce'] = json_decode($responce['encode'],true);
+  $responce['info'] = curl_getinfo($curl_handle);
 
   curl_close($curl_handle);
 

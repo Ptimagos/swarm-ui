@@ -30,10 +30,14 @@ include "../../checks/docker-daemon.php";
 include "../../checks/docker-swarm-manager.php";
 include "../../checks/docker-swarm-containers.php";
 
-$status="success";
+if ( $logs['info']['http_code'] >= 200 && $logs['info']['http_code'] <= 299 ){
+  $status="success";
+} else {
+  $status="danger";
+}
 
-if ( $logs == "" ){
-	$logs = "No logs ...";
+if ( $logs['responce'] == "" ){
+	$logs['responce'] = "No logs ...";
 }
 
 $endDate=time();
@@ -41,12 +45,15 @@ $endDate=time();
 $imageSet = '{"nodeName":"'.$host.'","image":"'.$image
 				.'","action":"'.$action.'","stat":"'.$status
 				.'","describe":"'.$describe.'","progress":"100","startDate":"'.$startDate
-				.'","endDate":"'.$endDate.'","logs":"'.$logs.'"}';
+				.'","endDate":"'.$endDate.'","logs":"'.$logs['responce'].'"}';
 createTask($imageSet,$jobId,$server);
 
 print "<h4>".$describe." <b class='font-db-danger'>".$image."</b> on host ".$host."</h4>";
 
 $getProgressBar = getBarProgress($status,'100');
 print $getProgressBar;
-	
+
+print "<pre>";
+print_r($logs);
+print "</pre>";
 ?>

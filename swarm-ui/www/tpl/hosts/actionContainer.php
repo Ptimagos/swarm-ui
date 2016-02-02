@@ -21,11 +21,9 @@ $jobId=time()."-".rand();
 $startDate=time();
 
 $node = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes/".$host);
-$nodeInfo = base64_decode($node[0]['Value']);
+$nodeInfo = base64_decode($node['responce'][0]['Value']);
 $nodeInfoValue = json_decode($nodeInfo);
-$checkStatBefor = restRequestSSL("GET",$nodeInfoValue->url,"/containers/".$actionContainerID."/json");
 $logs = restRequestSSL("POST",$nodeInfoValue->url,"/containers/".$actionContainerID."/".$action);
-$checkStatAfter = restRequestSSL("GET",$nodeInfoValue->url,"/containers/".$actionContainerID."/json");
 
 sleep(2);
 
@@ -33,14 +31,14 @@ include "../../checks/docker-daemon.php";
 include "../../checks/docker-swarm-manager.php";
 include "../../checks/docker-swarm-containers.php";
 
-if ( $checkStatBefor['State']['Status'] != $checkStatAfter['State']['Status'] ){
+if ( $logs['info']['http_code'] >= 200 && $logs['info']['http_code'] <= 299 ){
 	$status="success";
 } else {
 	$status="danger";
 }
 
-if ( $logs == "" ){
-	$logs = "No logs ...";
+if ( $logs['responce'] == "" ){
+	$logs['responce'] = "No logs ...";
 }
 
 $endDate=time();
@@ -48,7 +46,7 @@ $endDate=time();
 $containerSet = '{"nodeName":"'.$host.'","containerID":"'.$actionContainerID
 				.'","action":"'.$action.'","stat":"'.$status
 				.'","describe":"'.$describe.'","progress":"100","startDate":"'.$startDate
-				.'","endDate":"'.$endDate.'","logs":"'.$logs.'"}';
+				.'","endDate":"'.$endDate.'","logs":"'.$logs['responce'].'"}';
 createTask($containerSet,$jobId,$server);
 
 print "<h4>".$describe." <b class='font-db-danger'>".$actionContainerID."</b> on host ".$host."</h4>";

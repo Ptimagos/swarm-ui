@@ -47,11 +47,11 @@ $taskDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui
 
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin: 0px 10px 0px 10px;">
 					<?PHP
-					$num_main_tsk = count($taskDocker);
+					$num_main_tsk = count($taskDocker['responce']);
 					for($x=$num_main_tsk - 1;$x>=0;$x--)
 					{
 						$collapseIn="";
-						$taskDockerValue = base64_decode($taskDocker[$x]['Value']);
+						$taskDockerValue = base64_decode($taskDocker['responce'][$x]['Value']);
 						$valueTaskDocker = json_decode($taskDockerValue);
 						if (isset($_SESSION['valCollapse']) && $_SESSION['valCollapse'] == $x ) {
 							$collapseIn = "in";
@@ -65,6 +65,9 @@ $taskDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui
 						print $valueTaskDocker->describe;
 						if (isset($valueTaskDocker->containerID)){
 							print " : ".$valueTaskDocker->containerID;
+						}
+						if (isset($valueTaskDocker->image)){
+							print " : ".$valueTaskDocker->image;
 						}
 						print "</td>";
 						print "<td class='col-xs-2'>";

@@ -54,10 +54,10 @@ $containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/sw
 </tr>
 <?PHP
 	date_default_timezone_set('CET');
-	$nb_nodeDocker = count($nodesDocker);
+	$nb_nodeDocker = count($nodesDocker['responce']);
 	for($x=0;$x<$nb_nodeDocker;$x++)
 	{
-		$nodeDockerValue = base64_decode($nodesDocker[$x]['Value']);
+		$nodeDockerValue = base64_decode($nodesDocker['responce'][$x]['Value']);
 		$valueDocker = json_decode($nodeDockerValue);
 		print "<tr>";
 		print "<td>";
@@ -87,10 +87,10 @@ $containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/sw
 		$allContainersRunning=0;
 		$allContainersStopped=0;
 		$allContainersUnknown=0;
-		$nb_containerDocker = count($containersDocker);
+		$nb_containerDocker = count($containersDocker['responce']);
 		for($t=0;$t<$nb_containerDocker;$t++)
 		{
-			$containerDockerValue = base64_decode($containersDocker[$t]['Value']);
+			$containerDockerValue = base64_decode($containersDocker['responce'][$t]['Value']);
 			$valueContainerDocker = json_decode($containerDockerValue);
 			if ( $valueDocker->name == $valueContainerDocker->nodeName )
 			{

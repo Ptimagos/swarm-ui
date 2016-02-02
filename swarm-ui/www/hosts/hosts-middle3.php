@@ -16,11 +16,11 @@ if ( !isset($server['projectName']) ) {
 // ----- Host Docker ----- //
 $host_id = $_GET['host_id'];
 $nodesDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/nodes","?recurse");
-$nodeDockerValue = base64_decode($nodesDocker[$host_id]['Value']);
+$nodeDockerValue = base64_decode($nodesDocker['responce'][$host_id]['Value']);
 $valueDocker = json_decode($nodeDockerValue);
 // ----- Containers Docker ----- //
 $containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/containers","?recurse");
-$nb_containerDocker = count($containersDocker);
+$nb_containerDocker = count($containersDocker['responce']);
 
 include "../tpl/hosts/hosts-modal.php";
 ?>

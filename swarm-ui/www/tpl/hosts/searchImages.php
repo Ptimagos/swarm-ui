@@ -14,16 +14,16 @@ if ( !isset($server['projectName']) ) {
   require "../../../lib/psql.php";
 }
 $searchImageResult = restRequestSSL("GET",$_POST['url'],"/images/search","?term=".$_POST['search']);
-$arrlength=count($searchImageResult);
+$arrlength=count($searchImageResult['responce']);
 $input_option="";
 for($x=0;$x<$arrlength;$x++){
-  $nbCaracterDescribe = strlen($searchImageResult[$x]['description']);
+  $nbCaracterDescribe = strlen($searchImageResult['responce'][$x]['description']);
   if ( $nbCaracterDescribe >= 41 ){
-    $input_option .= "<option value='".$searchImageResult[$x]['name']."'>"
-    .$searchImageResult[$x]['name']." --> ".substr($searchImageResult[$x]['description'], 0, 40)."...</option>";
+    $input_option .= "<option value='".$searchImageResult['responce'][$x]['name']."'>"
+    .$searchImageResult['responce'][$x]['name']." --> ".substr($searchImageResult['responce'][$x]['description'], 0, 40)."...</option>";
   } else {
-    $input_option .= "<option value='".$searchImageResult[$x]['name']."'>"
-    .$searchImageResult[$x]['name']." --> ".$searchImageResult[$x]['description']."</option>";
+    $input_option .= "<option value='".$searchImageResult['responce'][$x]['name']."'>"
+    .$searchImageResult['responce'][$x]['name']." --> ".$searchImageResult['responce'][$x]['description']."</option>";
   }
 }
 ?>
