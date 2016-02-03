@@ -130,6 +130,12 @@ function createTask($action,$timestamp,$server){
   restRequest("PUT",$url,$uri,"",$action);                           
 } 
 
+function createImageTask($action,$timestamp,$server){                         
+  $url = $server['consul']['url'];                                    
+  $uri = $server['consul']['store_keys']."/tasks/waiting/".$timestamp;         
+  restRequest("PUT",$url,$uri,"",$action);                           
+} 
+
 /**** Fonction de curl ****/                  
 function restRequest($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) { 
                                           
@@ -137,7 +143,7 @@ function restRequest($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) {
   $curl_option_defaults = array(    
     CURLOPT_HEADER => false,       
     CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_TIMEOUT => 600
+    CURLOPT_CONNECTTIMEOUT => 1
   );                                                  
                                                       
   // Connect                                          
@@ -171,7 +177,7 @@ function restRequestSSL($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) 
   $curl_option_defaults = array(    
     CURLOPT_HEADER => false,       
     CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_TIMEOUT => 600
+    CURLOPT_CONNECTTIMEOUT => 1
   );                                                  
                                                       
   // Connect                                          

@@ -134,10 +134,10 @@ include "../tpl/hosts/hosts-modal.php";
 										jQuery("#actionCont").html(data);
 										setTimeout(function(){
 											$('#tasksAction').modal('hide');
-										}, 10000);
+										}, 2000);
 										setTimeout(function(){
 											$("#body-host-middle-container_0003").load("hosts/hosts-middle3.php?host_id=<?PHP print $host_id; ?>");
-										}, 10300);
+										}, 2300);
 									}	 
 								});
 							}
