@@ -1,0 +1,177 @@
+#!/bin/bash
+######################################################
+# Swarm-UI Server Deamon
+#
+######################################################
+# Trap
+trap process_TERM SIGTERM
+
+process_TERM() {
+	echo "-----------------------------------------------"
+	echo "`date +'%Y%m%d %H:%M:%S'` -- Arret de $me_FILE"
+	echo "-----------------------------------------------"
+	exit 0
+}
+# End Trap
+
+# The directory where this script is located
+
+ACTION=
+CFGFILE=
+
+function init () {
+	me_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+	me_FILE=$(basename $0)
+	. "${me_DIR}/../lib/log.sh"
+	. "${me_DIR}/../lib/file.sh"
+	PIDFILE="${me_DIR}/../run/swarm-ui-server.pid"
+}
+
+function load_cfg () {
+	if [ -f $CFGFILE ] 
+		then
+		. $CFGFILE
+	else
+		if [ "$CFGFILE" != "0" ]
+			then
+			echo "File $CFGFILE not found."
+			exit 1
+		fi
+	fi
+}
+
+# Variable
+function check_usage () {
+	while true; do
+		if [ -z "$1" ]; then
+			break
+		fi
+
+		case $1 in
+			-h|--help)
+				display_usage
+				exit 0
+				;;
+			-c|--config-file)
+				CFGFILE="$2"
+				shift
+				;;
+			start)
+				ACTION=start_agent
+				shift
+				;;
+			stop)
+				ACTION=stop_agent
+				CFGFILE=0
+				shift
+				;;
+			status)
+				ACTION=status_agent
+				CFGFILE=0
+				shift
+				;;
+		esac
+
+		shift
+	done
+
+if [ -z "$CFGFILE" ]; then
+	echo "ERROR: option '-c [CFGFILE]' missing"
+	exit 1
+fi
+
+if [ -z "$ACTION" ]; then
+	echo "ERROR: option 'start|stop|status' missing"
+	exit 1
+fi
+}
+
+function display_usage () {
+	echo "Usage: $0 -c [CFGFILE] start|stop|status"
+}
+
+function start_agent () {
+	PID_AGENT=`ps -ef | grep $me_FILE | grep -v grep | grep -v $$ | awk '{print $2}'`
+	if [ ! -z $PID_AGENT ]
+		then
+		echo "Service already running !"
+		echo "-- PID : $PID_AGENT"
+		exit 1
+	fi 
+	cd /
+
+	if [ "$1" = "child" ] ; then   # 2. We are the child. We need to fork again.
+		shift
+		umask 0
+		exec setsid $me_DIR/$me_FILE refork "$@" </dev/null >/dev/null 2>/dev/null &
+		ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $2}' > $PIDFILE
+		exit 0
+	fi
+	if [ "$1" != "refork" ] ; then # 1. This is where the original call starts.
+		echo "Starting $me_FILE ..."
+		exec $me_DIR/$me_FILE child "$@" &
+		exit 0
+	fi
+	
+
+	# 3. We have been reforked. Go to work.
+	exec >>$STDLOG
+	exec 2>>$ERRLOG
+	exec 0</dev/null
+
+	shift
+
+    # The real stuff goes here. To exit, see fun (above)
+    echo "-----------------------------------------------"
+    echo "`date +'%Y%m%d %H:%M:%S'` -- Demarrage de $me_FILE"
+    echo "-----------------------------------------------"
+    echo "loop all $TEMPO seconds"
+    #loop_agent=5
+    while true; do
+       	#if [ $loop_agent = 6 ]; then
+       	#	/usr/bin/php5 $me_DIR/updateHostStat.php
+       	#	loop_agent=0
+       	#fi
+		/usr/bin/php5 $me_DIR/searchTasks.php
+		sleep $TEMPO
+    done
+
+	exit
+}
+
+function stop_agent () {
+	echo "Stopping $me_FILE ..."
+	PID_AGENT=`ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $2}'`
+	if [ ! -z $PID_AGENT ]
+		then
+		kill $PID_AGENT
+	fi 
+	while [ ! -z $PID_AGENT ]
+	do
+		PID_AGENT=`ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $2}'`
+		sleep 1
+	done
+	rm -f $PIDFILE
+}
+
+function status_agent () {
+	printf "Service $me_FILE "
+	PID_AGENT=`ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $2}'`
+	if [ "$PID_AGENT" == "" ]
+		then
+		echo "not running"
+	else
+		echo "running" 
+		echo "-- PID : $PID_AGENT"
+	fi
+}
+
+### MAIN ###
+function main () {
+	init
+	check_usage $@
+	load_cfg
+	$ACTION $@
+}
+
+main "$@"

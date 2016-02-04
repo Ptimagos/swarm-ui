@@ -13,7 +13,7 @@ if ( !isset($server['projectName']) ) {
 	require "../../lib/mysql.php";
 	require "../../lib/psql.php";
 }
-	// ----- Containers Docker ----- //
+// ----- Tasks Docker ----- //
 $taskDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui/tasks","?recurse");
 ?>
 

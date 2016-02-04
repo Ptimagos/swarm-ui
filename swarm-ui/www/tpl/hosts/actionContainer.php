@@ -25,8 +25,6 @@ $nodeInfo = base64_decode($node['responce'][0]['Value']);
 $nodeInfoValue = json_decode($nodeInfo);
 $logs = restRequestSSL("POST",$nodeInfoValue->url,"/containers/".$actionContainerID."/".$action);
 
-sleep(2);
-
 include "../../checks/docker-daemon.php";
 include "../../checks/docker-swarm-manager.php";
 include "../../checks/docker-swarm-containers.php";
@@ -38,7 +36,7 @@ if ( $logs['info']['http_code'] >= 200 && $logs['info']['http_code'] <= 299 ){
 }
 
 if ( $logs['responce'] == "" ){
-	$logs['responce'] = "No logs ...";
+	$logs['responce'] = $logs['encode'];
 }
 
 $endDate=time();

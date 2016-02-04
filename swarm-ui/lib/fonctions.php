@@ -126,13 +126,20 @@ function unsetContainer($containerID,$server){
 /**** Function createTask CONSUL ****/                                    
 function createTask($action,$timestamp,$server){                         
   $url = $server['consul']['url'];                                    
-  $uri = $server['consul']['store_keys']."/tasks/".$timestamp;         
+  $uri = $server['consul']['store_keys']."/tasks/done/".$timestamp;         
   restRequest("PUT",$url,$uri,"",$action);                           
 } 
 
-function createImageTask($action,$timestamp,$server){                         
+/**** Function createTask CONSUL ****/                                    
+function createRunningTask($action,$timestamp,$server){                         
   $url = $server['consul']['url'];                                    
-  $uri = $server['consul']['store_keys']."/tasks/waiting/".$timestamp;         
+  $uri = $server['consul']['store_keys']."/tasks/running/".$timestamp;         
+  restRequest("PUT",$url,$uri,"",$action);                           
+} 
+
+function createImageTask($action,$host,$server){                         
+  $url = $server['consul']['url'];                                    
+  $uri = $server['consul']['store_keys']."/tasks/waiting/".$host;         
   restRequest("PUT",$url,$uri,"",$action);                           
 } 
 

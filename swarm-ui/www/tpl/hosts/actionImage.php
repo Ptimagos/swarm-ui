@@ -24,6 +24,8 @@ $startDate="";
 $endDate="";
 $status="waiting";
 $log="";
+$image .= ":latest";
+
 
 $imageSet = '{"nodeName":"'.$host.'","image":"'.$image
 				.'","action":"'.$action.'","stat":"'.$status
