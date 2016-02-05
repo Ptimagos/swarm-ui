@@ -95,7 +95,8 @@ $containersDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/sw
 			if ( $valueDocker->name == $valueContainerDocker->nodeName )
 			{
 				$allContainers++;
-				switch ($valueContainerDocker->status) {
+				list($statusCont, $uptime) = explode(" ", $valueContainerDocker->status, 2);
+				switch ($statusCont) {
 					case 'Up':
 						$allContainersRunning++;
 						break;

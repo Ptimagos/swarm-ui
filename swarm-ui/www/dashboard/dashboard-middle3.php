@@ -63,10 +63,11 @@ Place informations here and action button ...
 		print "</td>";
 		print "<td>";
 		$button_actif="active";
-		switch ($valueDocker->status) {
+		list($statusCont, $uptime) = explode(" ", $valueDocker->status, 2);
+		switch ($statusCont) {
 			case "Up":
 				$label="label-success";
-				$stat="running";
+				$stat=$valueDocker->status;
 				$icon="glyphicon glyphicon-off";
 				$label_action="label-danger";
 				$button_action="stop";
@@ -74,7 +75,7 @@ Place informations here and action button ...
 				break;
 			case "Exited":
 				$label="label-warning";
-				$stat="stopped";
+				$stat=$valueDocker->status;
 				$icon="glyphicon glyphicon-play";
 				$label_action="label-success";
 				$button_action="start";

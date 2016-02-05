@@ -27,7 +27,7 @@ $log="";
 $image .= ":latest";
 
 
-$imageSet = '{"nodeName":"'.$host.'","image":"'.$image
+$imageSet = '{"nodeName":"'.$host.'","url":"'.$url.'","image":"'.$image
 				.'","action":"'.$action.'","stat":"'.$status
 				.'","describe":"'.$describe.'","progress":"100","startDate":"'.$startDate
 				.'","endDate":"'.$endDate.'","logs":"'.$logs.'"}';

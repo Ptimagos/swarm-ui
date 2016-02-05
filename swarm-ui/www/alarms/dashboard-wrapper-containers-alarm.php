@@ -19,7 +19,8 @@ $nb_containersDocker = count($containersDocker['responce']);
 for($x=0;$x<$nb_containersDocker;$x++){
 	$containerDockerValue = base64_decode($containersDocker['responce'][$x]['Value']);
 	$valueDocker = json_decode($containerDockerValue);
-	switch ($valueDocker->status) {
+	list($statusCont, $uptime) = explode(" ", $valueDocker->status, 2);
+	switch ($statusCont) {
 			case "Up":
 				continue;
 				break;

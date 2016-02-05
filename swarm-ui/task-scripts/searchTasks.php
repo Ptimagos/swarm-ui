@@ -28,7 +28,7 @@ for($x=0;$x<$num_waiting_tsk;$x++){
 			// Update Task in CONSUL
 			$startDate=time();
 			$endDate="";
-			$imageSet = '{"nodeName":"'.$valueTaskWaiting->nodeName.'","image":"'.$valueTaskWaiting->image
+			$imageSet = '{"nodeName":"'.$valueTaskWaiting->nodeName.'","url":"'.$valueTaskWaiting->url.'","image":"'.$valueTaskWaiting->image
 				.'","action":"'.$valueTaskWaiting->action.'","stat":"starting","describe":"'
 				.$valueTaskWaiting->describe.'","progress":"100","startDate":"'.$startDate
 				.'","endDate":"'.$endDate.'","logs":""}';

@@ -16,7 +16,8 @@ $arrlength = count($containerInfos['responce']);
 
 for($x = 0; $x < $arrlength; $x++){
   list($empty, $nodeName, $serviceName) =  explode("/", $containerInfos['responce'][$x]['Names'][0]);
-  list($status, $uptime) = explode(" ", $containerInfos['responce'][$x]['Status'], 2);
+  //list($status, $uptime) = explode(" ", $containerInfos['responce'][$x]['Status'], 2);
+  $status=$containerInfos['responce'][$x]['Status'];
   $containerID = substr($containerInfos['responce'][$x]['Id'], 0, 12);
   $containerImage = $containerInfos['responce'][$x]['Image'];
   $checkContainer[$containerID] = $containerID; 
@@ -41,10 +42,10 @@ for($x = 0; $x < $arrlength; $x++){
       if (isset($checkLocalContainer['responce']['Id'])){
         switch ($checkLocalContainer['responce']['State']['Status']) {
           case 'running':
-            $status="Up";
+            $status="Up ";
             break;
           case 'exited':
-            $status="Exited";
+            $status="Exited ";
             break;
           default:
             $status=$checkLocalContainer['responce']['State']['Status'];

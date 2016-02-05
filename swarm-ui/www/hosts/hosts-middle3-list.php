@@ -23,10 +23,11 @@
 				if ( $valueDocker->name == $valueContainerDocker->nodeName )
 				{
 					$button_actif="active";
-					switch ($valueContainerDocker->status) {
+					list($statusCont, $uptime) = explode(" ", $valueContainerDocker->status, 2);
+					switch ($statusCont) {
 						case "Up":
 							$label="label-success";
-							$stat="running";
+							$stat=$valueContainerDocker->status;
 							$icon="glyphicon glyphicon-off";
 							$label_action="label-danger";
 							$button_action="stop";
@@ -34,7 +35,7 @@
 							break;
 						case "Exited":
 							$label="label-warning";
-							$stat="stopped";
+							$stat=$valueContainerDocker->status;
 							$icon="glyphicon glyphicon-play";
 							$label_action="label-success";
 							$button_action="start";
@@ -52,7 +53,7 @@
 					}
 					print "<tr>";
 					print "<td>";
-					print "<a onclick='loadCont(".$t.")' href='#'>".$valueContainerDocker->id."</a>";
+					print "<a onclick='loadCont(".$t.")' href='#'>".$valueContainerDocker->id."...</a>";
 					print "</td>";
 					print "<td>";
 					print $valueContainerDocker->image;
@@ -93,7 +94,7 @@
 			{
 				print "<tr>";
 				print "<td>";
-				print "<a onclick='loadCont(".$t.")' href='#'>".substr($imageDocker['responce'][$t]['Id'], 0, 12)."</a>";
+				print "<a onclick='loadCont(".$t.")' href='#'>".substr($imageDocker['responce'][$t]['Id'], 0, 12)."...</a>";
 				print "</td>";
 				print "<td>";
 				print $imageDocker['responce'][$t]['RepoTags'][0];

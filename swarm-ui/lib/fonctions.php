@@ -24,6 +24,13 @@
         return $str;
 }
 
+//**** Exec Curl Command ****/
+function unixCurl ($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) {
+  $command = "ls -l ".$dir;
+  exec ($command, $result);
+  return $result;
+}
+
 /**** Function getUserPassword in CONSUL ****/                                                  
 function getUserPassword($username,$server){
   $url = $server['consul']['url'];
@@ -52,7 +59,8 @@ function getNumberUpOrDown($nodes,$stat){
   for($x = 0; $x < $nb_nodes; $x++){
     $nodeValue = base64_decode($nodes[$x]['Value']);
     $value = json_decode($nodeValue);
-    if (isset($value->status) && $value->status == $stat ){
+    list($status, $uptime) = explode(" ", $value->status, 2);
+    if (isset($value->status) && $status == $stat ){
       $nb_nodes_running++;
     } else {
       $nb_nodes_down++;
@@ -158,7 +166,7 @@ function restRequest($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) {
                                     
   // Compose querry                 
   $options = array(                                            
-    CURLOPT_URL => $url.$uri."".$querry,                                      
+    CURLOPT_URL => $url.$uri.$querry,                                      
     CURLOPT_CUSTOMREQUEST => $method, // GET POST PUT PATCH DELETE HEAD OPTIONS
     CURLOPT_SSL_VERIFYPEER => false, // No Verify SSL
     CURLOPT_POSTFIELDS => $json,
@@ -177,6 +185,20 @@ function restRequest($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) {
                                     
 } // Fin de la fonction curlRequest
 
+//**** Exec Curl Command ****/
+function unixCurlSSL ($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) {
+  $CURLOPT_CAINFO = "/opt/swarm-ui/certs/ca.pem";
+  $CURLOPT_SSLCERT = "/opt/swarm-ui/certs/cert.pem";
+  $CURLOPT_SSLKEY = "/opt/swarm-ui/certs/key.pem";
+
+  $command = "curl --cert ".$CURLOPT_SSLCERT." --key ".$CURLOPT_SSLKEY." --cacert ".$CURLOPT_CAINFO." -X".$method." ".$url.$uri.$querry;
+  if ( $json <> NULL ){
+    $command .= " -d ".$json;
+  }
+  exec ($command, $result);
+  return $result;
+}
+
 /**** Fonction de curl TLS ****/                  
 function restRequestSSL($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) { 
                                           
@@ -192,7 +214,7 @@ function restRequestSSL($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) 
 
   // Compose querry                 
   $options = array(                                            
-    CURLOPT_URL => $url.$uri."".$querry,                                      
+    CURLOPT_URL => $url.$uri.$querry,                                      
     CURLOPT_CUSTOMREQUEST => $method, // GET POST PUT PATCH DELETE HEAD OPTIONS
     CURLOPT_SSL_VERIFYPEER => true, // Verify SSL
     CURLOPT_CERTINFO => true,
