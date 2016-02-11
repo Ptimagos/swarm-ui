@@ -24,13 +24,6 @@
         return $str;
 }
 
-//**** Exec Curl Command ****/
-function unixCurl ($method,$url,$uri,$querry=NULL,$json=NULL,$option=NULL) {
-  $command = "ls -l ".$dir;
-  exec ($command, $result);
-  return $result;
-}
-
 /**** Function getUserPassword in CONSUL ****/                                                  
 function getUserPassword($username,$server){
   $url = $server['consul']['url'];
@@ -59,7 +52,7 @@ function getNumberUpOrDown($nodes,$stat){
   for($x = 0; $x < $nb_nodes; $x++){
     $nodeValue = base64_decode($nodes[$x]['Value']);
     $value = json_decode($nodeValue);
-    list($status, $uptime) = explode(" ", $value->status, 2);
+    list($status) = explode(" ", $value->status, 2);
     if (isset($value->status) && $status == $stat ){
       $nb_nodes_running++;
     } else {

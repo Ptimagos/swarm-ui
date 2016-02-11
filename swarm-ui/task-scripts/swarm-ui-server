@@ -4,6 +4,7 @@
 #
 ######################################################
 # Trap
+set -x
 trap process_TERM SIGTERM
 
 process_TERM() {
@@ -91,12 +92,18 @@ function display_usage () {
 }
 
 function start_agent () {
-	PID_AGENT=`ps -ef | grep $me_FILE | grep -v grep | grep -v $$ | awk '{print $2}'`
-	if [ ! -z $PID_AGENT ]
+	CURRENT_PID=`cat $PIDFILE`
+	if [ ! -z $CURRENT_PID ] 
+	then
+		PID_AGENT=`ps -ef | grep $me_FILE | grep $CURRENT_PID | awk '{print $1}'`
+		if [ ! -z $PID_AGENT ]
 		then
-		echo "Service already running !"
-		echo "-- PID : $PID_AGENT"
-		exit 1
+			echo "Service already running !"
+			echo "-- PID : $PID_AGENT"
+			exit 1
+		else
+			echo "" > $CURRENT_PID
+		fi
 	fi 
 	cd /
 
@@ -104,7 +111,7 @@ function start_agent () {
 		shift
 		umask 0
 		exec setsid $me_DIR/$me_FILE refork "$@" </dev/null >/dev/null 2>/dev/null &
-		ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $2}' > $PIDFILE
+		ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $1}' > $PIDFILE
 		exit 0
 	fi
 	if [ "$1" != "refork" ] ; then # 1. This is where the original call starts.
@@ -132,8 +139,8 @@ function start_agent () {
        	#	/usr/bin/php5 $me_DIR/updateHostStat.php
        	#	loop_agent=0
        	#fi
-		/usr/bin/php5 $me_DIR/searchTasks.php
-		sleep $TEMPO
+			/usr/bin/php $me_DIR/searchTasks.php
+			sleep $TEMPO
     done
 
 	exit
@@ -141,22 +148,22 @@ function start_agent () {
 
 function stop_agent () {
 	echo "Stopping $me_FILE ..."
-	PID_AGENT=`ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $2}'`
+	PID_AGENT=`ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $1}'`
 	if [ ! -z $PID_AGENT ]
 		then
 		kill $PID_AGENT
 	fi 
 	while [ ! -z $PID_AGENT ]
 	do
-		PID_AGENT=`ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $2}'`
+		PID_AGENT=`ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $1}'`
 		sleep 1
 	done
-	rm -f $PIDFILE
+	echo "" > $PIDFILE
 }
 
 function status_agent () {
 	printf "Service $me_FILE "
-	PID_AGENT=`ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $2}'`
+	PID_AGENT=`ps -ef | grep $me_FILE | grep refork | grep -v grep | awk '{print $1}'`
 	if [ "$PID_AGENT" == "" ]
 		then
 		echo "not running"

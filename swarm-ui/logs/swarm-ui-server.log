@@ -1,0 +1,54 @@
+-----------------------------------------------
+20160206 23:21:06 -- Demarrage de swarm-ui-server
+-----------------------------------------------
+loop all 10 seconds
+-----------------------------------------------
+20160206 23:23:06 -- Arret de swarm-ui-server
+-----------------------------------------------
+-----------------------------------------------
+20160206 23:28:01 -- Demarrage de swarm-ui-server
+-----------------------------------------------
+loop all 10 seconds
+2016-02-06 23:28:01 - INFO - Launch task for the server bdd1 => Pull image dockerui/dockerui:latest
+-----------------------------------------------
+20160206 23:28:30 -- Demarrage de swarm-ui-server
+-----------------------------------------------
+loop all 10 seconds
+-----------------------------------------------
+20160206 23:30:51 -- Arret de swarm-ui-server
+-----------------------------------------------
+-----------------------------------------------
+20160206 23:31:00 -- Arret de swarm-ui-server
+-----------------------------------------------
+-----------------------------------------------
+20160206 23:41:57 -- Demarrage de swarm-ui-server
+-----------------------------------------------
+loop all 10 seconds
+-----------------------------------------------
+20160206 23:42:18 -- Arret de swarm-ui-server
+-----------------------------------------------
+-----------------------------------------------
+20160206 23:47:21 -- Demarrage de swarm-ui-server
+-----------------------------------------------
+loop all 10 seconds
+-----------------------------------------------
+20160207 00:04:33 -- Demarrage de swarm-ui-server
+-----------------------------------------------
+loop all 10 seconds
+2016-02-07 00:10:04 - INFO - Launch task for the server bdd1 => Pull image dockerui/dockerui:latest
+2016-02-07 00:11:44 - INFO - Launch task for the server bdd1 => Pull image dockerui/dockerui:latest
+2016-02-07 00:15:55 - INFO - Launch task for the server bdd1 => Pull image dockerui/dockerui:latest
+2016-02-07 00:18:05 - INFO - Launch task for the server bdd1 => Pull image nginx:latest
+2016-02-08 14:43:32 - INFO - Launch task for the server bdd1 => Pull image dockerswarm/swarm:latest
+2016-02-08 14:53:23 - INFO - Launch task for the server bdd1 => Pull image nginx:latest
+2016-02-08 14:54:24 - INFO - Launch task for the server bdd1 => Pull image nginx:2.3.4
+2016-02-08 14:57:24 - INFO - Launch task for the server bdd1 => Pull image nginx:2.4.5
+2016-02-08 15:02:25 - INFO - Launch task for the server bdd1 => Pull image :latest
+2016-02-08 15:04:25 - INFO - Launch task for the server bdd1 => Pull image :latest
+2016-02-08 15:06:45 - INFO - Launch task for the server bdd1 => Pull image :latest
+2016-02-08 15:11:06 - INFO - Launch task for the server bdd1 => Pull image nginx:3.4.5
+2016-02-08 15:14:06 - INFO - Launch task for the server bdd1 => Pull image nginx:4.5.6
+2016-02-08 15:17:07 - INFO - Launch task for the server bdd1 => Pull image nginx:4.5.6
+2016-02-08 15:21:17 - INFO - Launch task for the server bdd1 => Pull image nginx:5.6.7
+2016-02-08 15:23:58 - INFO - Launch task for the server bdd1 => Pull image nginx:6.7.8
+2016-02-08 15:25:18 - INFO - Launch task for the server bdd1 => Pull image nginx:latest

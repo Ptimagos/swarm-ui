@@ -10,13 +10,13 @@ $swarmInfos = restRequestSSL("GET","https://".$swarmPrimary,"/info");
 
 // Set Nodes Information and status
 $checkNodes = array();
-$arrlength = count($swarmInfos['responce']['DriverStatus']);
-for($x = 4, $j = 5, $t = 9; $x < $arrlength; $x += 6, $j += 6, $t += 6){
-  $nodeName = $swarmInfos['responce']['DriverStatus'][$x][0];
-  $nodeServiceUrl = $swarmInfos['responce']['DriverStatus'][$x][1];
-  $nodeHealth = $swarmInfos['responce']['DriverStatus'][$j][1];
-  $nodeVersion = explode(" ",$swarmInfos['responce']['DriverStatus'][$t][1]);
-  $checkNodes[$nodeName] = $nodeName; 
+$arrlength = count($swarmInfos['responce']['SystemStatus']);
+for($x = 4, $j = 5, $t = 9; $x < $arrlength; $x += 8, $j += 8, $t += 8){
+  $nodeName = trim($swarmInfos['responce']['SystemStatus'][$x][0]);
+  $nodeServiceUrl = $swarmInfos['responce']['SystemStatus'][$x][1];
+  $nodeHealth = $swarmInfos['responce']['SystemStatus'][$j][1];
+  $nodeVersion = explode(" ",$swarmInfos['responce']['SystemStatus'][$t][1]);
+  $checkNodes[$nodeName] = $nodeName;
   $nodeSet = '{"name":"'.$nodeName.'","version":"'.$nodeVersion[3].'","url":"https://'.$nodeServiceUrl.'","status":"'.$nodeHealth.'"}';
   setNode($nodeName,$nodeSet,$server);
 }

@@ -9,9 +9,9 @@
 		<!-- Table -->
 		<table class="table table-striped no-margin-bottom">
 			<tr>
-				<th class='col-xs-1'>Container ID</th>
-				<th class='col-xs-2'>Container Image</th>
-				<th class='col-xs-4'>Name</th>
+				<th class='col-xs-2'>Container ID</th>
+				<th class='col-xs-3'>Container Image</th>
+				<th class='col-xs-3'>Name</th>
 				<th class='col-xs-2'>Action</th>
 				<th class='col-xs-2'>Status</th>
 			</tr>
@@ -53,7 +53,7 @@
 					}
 					print "<tr>";
 					print "<td>";
-					print "<a onclick='loadCont(".$t.")' href='#'>".$valueContainerDocker->id."...</a>";
+					print "<a onclick=\"loadCont('".$host_id."','".$valueContainerDocker->id."')\" href='#'>".$valueContainerDocker->id."...</a>";
 					print "</td>";
 					print "<td>";
 					print $valueContainerDocker->image;
@@ -81,10 +81,10 @@
 	<div role="tabpanel" class="tab-pane" id="list-images">
 		<table class="table table-striped no-margin-bottom">
 			<tr>
-				<th class='col-xs-1'>Imager ID</th>
-				<th class='col-xs-2'>Image RepoTags</th>
-				<th class='col-xs-4'>Created</th>
-				<th class='col-xs-4'>VirtualSize</th>
+				<th class='col-xs-2'>Imager ID</th>
+				<th class='col-xs-4'>Image RepoTags</th>
+				<th class='col-xs-3'>Created</th>
+				<th class='col-xs-3'>VirtualSize</th>
 			</tr>
 			<?php
 			// ----- Images Docker ----- //
@@ -94,7 +94,7 @@
 			{
 				print "<tr>";
 				print "<td>";
-				print "<a onclick='loadCont(".$t.")' href='#'>".substr($imageDocker['responce'][$t]['Id'], 0, 12)."...</a>";
+				print "<a onclick='loadImage(".$host_id.",".substr($imageDocker['responce'][$t]['Id'], 0, 12).")' href='#'>".substr($imageDocker['responce'][$t]['Id'], 0, 12)."...</a>";
 				print "</td>";
 				print "<td>";
 				print $imageDocker['responce'][$t]['RepoTags'][0];

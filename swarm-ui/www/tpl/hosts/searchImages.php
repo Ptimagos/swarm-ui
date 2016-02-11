@@ -29,18 +29,20 @@ for($x=0;$x<$arrlength;$x++){
 ?>
 <form  id="installDockerImages" action="tpl/hosts/actionImage.php" method="post">
   <div class="col-lg-12">
-   <div class="input-group">
-    <select class="form-control" name="image">
-      <option value=""></option>
-      <?php print $input_option; ?>
-    </select>
+    <div class="input-group">
+      <select class="form-control" name="image">
+        <option value=""></option>
+        <?php print $input_option; ?>
+      </select>
+      <span class="input-group-btn">
+        <button id="btnInstall" onClick="actionImage()" class="btn btn-success glyphicon glyphicon-save" style="top:0;" type="button"></button>
+      </span>
+    </div>
+    <br/>
+    <input type="text" class="form-control" name='tags' placeholder="Tag latest"></input>
     <input type="hidden" name="hostId" value="<?PHP print $_POST['host_id']; ?>"></input>
     <input type="hidden" name="url" value="<?PHP print $_POST['url']; ?>"></input>
     <input type="hidden" name="actionImg" value="pull"></input>
     <input type="hidden" name="describeAction" value="Pull image"></input>
-    <span class="input-group-btn">
-      <button id="btnInstall" onClick="actionImage()" class="btn btn-success glyphicon glyphicon-save" style="top:0;" type="button"></button>
-    </span>
   </div>
-</div>
 </form>

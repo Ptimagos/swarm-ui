@@ -35,8 +35,8 @@ $taskDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui
 				<div class="panel panel-default" style="margin: 0px 10px 5px 10px;">
 					<table class="table table-striped">
 						<tr style="width: 100%;">
-							<th class="col-xs-2">Action</th>
-							<th class="col-xs-2">Server</th>
+							<th class="col-xs-3">Action</th>
+							<th class="col-xs-1">Server</th>
 							<th class="col-xs-3">Status</th>
 							<th class="col-xs-1"></th>
 							<th class="col-xs-2">Start</th>
@@ -61,7 +61,7 @@ $taskDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui
 						print '<a onclick="doalert('.$x.')" class="myhref" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse'.$x.'" aria-expanded="true" aria-controls="collapse'.$x.'">';
 						print "<table class='table' style='margin-bottom: 0px;'>";		
 						print "<tr style='width: 100%;'>";
-						print "<td class='col-xs-2'>";
+						print "<td class='col-xs-3'>";
 						print $valueTaskDocker->describe;
 						if (isset($valueTaskDocker->containerID)){
 							print " : ".$valueTaskDocker->containerID;
@@ -70,7 +70,7 @@ $taskDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui
 							print " : ".$valueTaskDocker->image;
 						}
 						print "</td>";
-						print "<td class='col-xs-2'>";
+						print "<td class='col-xs-1'>";
 						print $valueTaskDocker->nodeName;
 						print "</td>";
 						print "<td class='col-xs-3'>";
@@ -81,13 +81,13 @@ $taskDocker = restRequest("GET",$server['consul']['url'],"/v1/kv/docker/swarm-ui
 						print "<td class='col-xs-1'>";
 						print "</td>";
 						print "<td class='col-xs-2'>";
-						if (isset($valueTaskDocker->startDate))
+						if (isset($valueTaskDocker->startDate) && $valueTaskDocker->startDate != "" )
 						{
 							echo date("Y-m-d H:i:s",$valueTaskDocker->startDate);
 						}
 						print "</td>";
 						print "<td class='col-xs-2'>";
-						if (isset($valueTaskDocker->endDate))
+						if (isset($valueTaskDocker->endDate) && $valueTaskDocker->endDate != "" )
 						{
 							echo date("Y-m-d H:i:s",$valueTaskDocker->endDate);
 						}

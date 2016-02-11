@@ -1,0 +1,5744 @@
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
+/opt/swarm-ui/task-scripts/swarm-ui-server: line 135: /usr/bin/php5: No such file or directory
++ exec
++ shift
++ echo -----------------------------------------------
+++ date '+%Y%m%d %H:%M:%S'
++ echo '20160207 00:04:33 -- Demarrage de swarm-ui-server'
++ echo -----------------------------------------------
++ echo 'loop all 10 seconds'
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
+PHP Parse error:  syntax error, unexpected '$server' (T_VARIABLE) in /opt/swarm-ui/cfg/conf.php on line 6
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
+PHP Parse error:  syntax error, unexpected '$server' (T_VARIABLE) in /opt/swarm-ui/cfg/conf.php on line 6
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
+PHP Parse error:  syntax error, unexpected '$server' (T_VARIABLE) in /opt/swarm-ui/cfg/conf.php on line 6
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
+PHP Parse error:  syntax error, unexpected '$server' (T_VARIABLE) in /opt/swarm-ui/cfg/conf.php on line 6
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10
++ true
++ /usr/bin/php /opt/swarm-ui/task-scripts/searchTasks.php
++ sleep 10

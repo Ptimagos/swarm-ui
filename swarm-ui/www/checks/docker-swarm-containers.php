@@ -21,7 +21,7 @@ for($x = 0; $x < $arrlength; $x++){
   $containerID = substr($containerInfos['responce'][$x]['Id'], 0, 12);
   $containerImage = $containerInfos['responce'][$x]['Image'];
   $checkContainer[$containerID] = $containerID; 
-  $containerSet = '{"nodeName":"'.$nodeName.'","id":"'.$containerID.'","image":"'.$containerImage.'","serviceName":"'.$serviceName.'","status":"'.$status.'","uptime":"'.$uptime.'"}';
+  $containerSet = '{"nodeName":"'.$nodeName.'","id":"'.$containerID.'","image":"'.$containerImage.'","serviceName":"'.$serviceName.'","status":"'.$status.'"}';
   $table = $nodeName."-".$containerID;
   setContainer($table,$containerSet,$server);
 }         

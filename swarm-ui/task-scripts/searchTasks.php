@@ -35,7 +35,7 @@ for($x=0;$x<$num_waiting_tsk;$x++){
 
 			restRequest("DELETE",$server['consul']['url'],"/v1/kv/".$taskWaiting['responce'][$x]['Key']);
 			createRunningTask($imageSet,$valueTaskWaiting->nodeName,$server);
-			$cmd = "nohup /usr/bin/php5 pullDockerImage.php ".$valueTaskWaiting->nodeName." >> ".$server['cfg']['logs']."searchTasks.log 2>&1 &";
+			$cmd = "nohup /usr/bin/php ".$server['cfg']['task-scripts']."pullDockerImage.php ".$valueTaskWaiting->nodeName." >> ".$server['cfg']['logs']."searchTasks.log 2>&1 &";
 			exec ($cmd, $result_Exec);
 			break;
 		case "Create Container" :
